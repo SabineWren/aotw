@@ -14,25 +14,24 @@ body {
 	color: white;
 }
 
-/*from robertspaceindustries.com/rsi/static/images/common/bg-stars-2560<1280><768><500>.jpg*/
 #home-background {
 	position:absolute;
 	top:0;bottom:750px;left:0;right:0;
-	background:url("/pictures/bg-stars-2560.jpg") center bottom repeat-y;
+	background:url("http://i.imgur.com/PZ3xrM8.jpg") center bottom repeat-y;
 }
 @media only screen and (max-width: 1280px){
 	#home-background {
-		background-image:url("/pictures/bg-stars-1280.jpg")
+		background-image:url("http://i.imgur.com/jKdgoGA.jpg")
 	}
 }
 @media only screen and (max-width: 768px){
 	#home-background {
-		background-image:url("/pictures/bg-stars-768.jpg")
+		background-image:url("http://i.imgur.com/6nKeDGG.jpg")
 	}
 }
 @media only screen and (max-width: 500px){
 	#home-background {
-		background-image:url("/pictures/bg-stars-500.jpg")
+		background-image:url("http://i.imgur.com/enYtKTu.jpg")
 	}
 }
 
