@@ -107,3 +107,12 @@ input[type=submit]:hover {
 form {
 	display: inline-block;
 }
+
+#main-buttons input[type=submit] {
+	width: 400px;
+}
+@media only screen and (max-width: 949px){
+	#main-buttons input[type=submit] {
+		width: 200px;
+	}
+}
