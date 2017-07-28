@@ -116,3 +116,21 @@ form {
 		width: 200px;
 	}
 }
+
+.video-thumbnail-container-outer {
+	display: inline-block; margin: auto;
+}
+.video-thumbnail-container-inner {
+	display: inline-block;
+	margin-top: 20px;
+}
+@media only screen and (min-width: 950px){
+	.video-thumbnail-container-inner {
+		float: left;
+	}
+}
+.video-thumbnail a, .video-thumbnail img, .video-thumbnail h2 {
+	margin: 10px;
+	width: 420px;
+}
+
