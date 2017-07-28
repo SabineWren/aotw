@@ -12,6 +12,7 @@
 
 body {
 	color: white;
+	text-align: center;
 }
 
 #home-background {
@@ -39,11 +40,18 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: -80px;
 }
+@media only screen and (max-width: 949px){
+	#aotw-logo {
+		margin-bottom: -35px;
+	}
+}
+
 #aotw-logo-caption {
-	text-align: center;
-	padding-top: 75px;
+	padding-top: 50px;
 	margin-bottom: -150px;
+	font-size: 48px;
 }
 @media only screen and (max-width: 949px){
 	#aotw-logo-caption {
@@ -69,4 +77,33 @@ a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:active h1, a:active h2, a:acti
 p {
 	color: white;
 	font-family: "Times New Roman", Times, serif;
+}
+
+#main-buttons {
+	margin: auto;
+	display: inline-block;
+}
+
+input[type=submit] {
+	margin-top: 5px;
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	background: #1199DD;
+	font-size: 18px;
+	text-decoration: none;
+	border-radius: 10px;
+	height: 46px;
+	color: white;
+	border-color: #3498db;
+	font-weight: bold;
+}
+
+input[type=submit]:hover {
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	background: #21AAFD;
+	border-color: #BBAA88;
+	text-decoration: none;
+}
+
+form {
+	display: inline-block;
 }

@@ -20,13 +20,24 @@
 	<title>Angels of the Warp</title>
 </head>
 <body id="home-background">
-	<a href="https://robertsspaceindustries.com/orgs/aotw">
-		<h1 id="aotw-logo-caption">Angels of the Warp</h1>
-	</a>
+	<h1 id="aotw-logo-caption">Angels of the Warp</h1>
+	
 	<picture>
 		<source media="(max-width: 949px)" srcset="http://i.imgur.com/sH7EeAd.png">
 		<source media="(min-width: 950px)" srcset="http://i.imgur.com/mykYRo9.png">
 		<img id="aotw-logo" alt="AotW Logo (475px or 950px)"></img>
 	</picture>
+	
+	<div id=main-buttons>
+		<form action="/pages/mumble.html">
+			<input type="submit" value="VOIP Info" />
+		</form>
+		<form onclick="window.open('https://robertsspaceindustries.com/orgs/aotw'),'_blank'">
+			<input type="submit" value="RSI Page" />
+		</form>
+		<form onclick="window.open('https://discord.gg/6Mzj6Es'),'_blank'">
+			<input type="submit" value="Discord Link" />
+		</form>
+	</div>
 </body>
 </html>
