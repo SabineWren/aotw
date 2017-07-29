@@ -1,0 +1,33 @@
+/*
+	@license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt
+	
+	Copyright (C) 2017 SabineWren
+	https://github.com/SabineWren
+	
+	GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
+	https://www.gnu.org/licenses/agpl-3.0.html
+	
+	@license-end
+*/
+
+#home-background {
+	position:absolute;
+	top:0;bottom:750px;left:0;right:0;
+	background:url("http://i.imgur.com/PZ3xrM8.jpg") center bottom repeat-y;
+}
+@media only screen and (max-width: 1280px){
+	#home-background {
+		background-image:url("http://i.imgur.com/jKdgoGA.jpg")
+	}
+}
+@media only screen and (max-width: 768px){
+	#home-background {
+		background-image:url("http://i.imgur.com/6nKeDGG.jpg")
+	}
+}
+@media only screen and (max-width: 500px){
+	#home-background {
+		background-image:url("http://i.imgur.com/enYtKTu.jpg")
+	}
+}
+

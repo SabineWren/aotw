@@ -16,6 +16,7 @@
 <head>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="/css/background.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<title>Angels of the Warp</title>
 </head>
@@ -28,22 +29,45 @@
 		<img id="aotw-logo" alt="AotW Logo (475px or 950px)"></img>
 	</picture>
 	
-	<div id=main-buttons>
-		<form action="/pages/tools.html">
-			<input type="submit" value="Tools" title="Useful Tools" />
-		</form>
-		<br>
-		<form onclick="window.open('https://robertsspaceindustries.com/orgs/aotw'),'_blank'">
-			<input type="submit" value="RSI Page" title="https://robertsspaceindustries.com/orgs/aotw" />
-		</form>
-		<br>
-		<form action="/pages/mumble.html">
-			<input type="submit" value="VOIP Info" title="Mumble: voice.angelsofthewarp.com:64738" />
-		</form>
-		<br>
-		<form onclick="window.open('https://discord.gg/6Mzj6Es'),'_blank'">
-			<input type="submit" value="Discord Link" title="https://discord.gg/6Mzj6Es"/>
-		</form>
+	<div class=buttons-container-outer>
+		<div class="buttons-container-inner">
+			<a class="button-custom"
+				href="/pages/tools.html"
+				title="Org Finder et cetera">
+				<img alt="tools icon" src="../icons/tools.png">
+				<h3>Tools and Resources</h3>
+			</a>
+			<br>
+			<a class="button-custom"
+				href="https://robertsspaceindustries.com/orgs/aotw"
+				title="Star Citizen Org Listing">
+				<img alt="rsi icon" src="../icons/rsi.png">
+				<h3>RSI Page</h3>
+			</a>
+			<br>
+			<a class="button-custom"
+				href="/pages/media.html"
+				title="YouTube and Twitch">
+				<img alt="play icon" src="../icons/play.png">
+				<h3>Media Channels</h3>
+			</a>
+		</div>
+		
+		<div class="buttons-container-inner">
+			<a class="button-custom"
+				href="/pages/mumble.html"
+				title="Mumble: voice.angelsofthewarp.com:64738">
+				<img alt="mumble icon" src="../icons/mumble.png">
+				<h3>Mumble Info (VOIP)</h3>
+			</a>
+			<br>
+			<a class="button-custom"
+				href="https://discord.gg/6Mzj6Es"
+				title="Discord Server Invite">
+				<img alt="discord icon" src="../icons/discord.png">
+				<h3>Discord Link (Chat)</h3>
+			</a>
+		</div>
 	</div>
 	
 	<br>

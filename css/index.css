@@ -15,27 +15,6 @@ body {
 	text-align: center;
 }
 
-#home-background {
-	position:absolute;
-	top:0;bottom:750px;left:0;right:0;
-	background:url("http://i.imgur.com/PZ3xrM8.jpg") center bottom repeat-y;
-}
-@media only screen and (max-width: 1280px){
-	#home-background {
-		background-image:url("http://i.imgur.com/jKdgoGA.jpg")
-	}
-}
-@media only screen and (max-width: 768px){
-	#home-background {
-		background-image:url("http://i.imgur.com/6nKeDGG.jpg")
-	}
-}
-@media only screen and (max-width: 500px){
-	#home-background {
-		background-image:url("http://i.imgur.com/enYtKTu.jpg")
-	}
-}
-
 #aotw-logo {
 	display: block;
 	margin-left: auto;
@@ -79,56 +58,69 @@ p {
 	font-family: "Times New Roman", Times, serif;
 }
 
-#main-buttons {
-	margin: auto;
+.buttons-container-outer {
 	display: inline-block;
+	margin: auto;
+	margin-top: 10px;
+}
+.buttons-container-inner {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-right: 5px;
 }
 
-input[type=submit] {
-	margin-top: 5px;
+.button-custom {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-right: 10px;
+	margin-left: 0px;
+	padding: 5px;
 	background-image: linear-gradient(to bottom, #3498db, #2980b9);
 	background: #1199DD;
 	font-size: 18px;
 	text-decoration: none;
 	border-radius: 10px;
-	height: 46px;
+	height: 32px;
+	width: 266px;
 	color: white;
 	border-color: #3498db;
 	font-weight: bold;
 }
-
-input[type=submit]:hover {
+.button-custom:hover {
 	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
 	background: #21AAFD;
 	border-color: #BBAA88;
 	text-decoration: none;
+}
+.button-custom h3 {
+	float: left;
+	line-height: 32px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.button-custom img {
+	float: left;
+	height: 32px;
 }
 
 form {
 	display: inline-block;
 }
 
-#main-buttons input[type=submit] {
-	width: 400px;
-}
-@media only screen and (max-width: 949px){
-	#main-buttons input[type=submit] {
-		width: 200px;
-	}
-}
-
 .video-thumbnail-container-outer {
-	display: inline-block; margin: auto;
+	display: inline-block;
+	margin: auto;
 }
 .video-thumbnail-container-inner {
 	display: inline-block;
 	margin-top: 20px;
 }
-@media only screen and (min-width: 950px){
-	.video-thumbnail-container-inner {
-		float: left;
-	}
-}
+
 .video-thumbnail a, .video-thumbnail img, .video-thumbnail h2 {
 	margin: 10px;
 	width: 420px;
