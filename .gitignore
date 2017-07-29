@@ -1,5 +1,8 @@
 info.php
 ips4.php
-.gitignore
 .htaccess
+
+org_icons*
+log_sched
+error
 
