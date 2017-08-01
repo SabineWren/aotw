@@ -25,25 +25,25 @@ body {
 #aotw-logo-caption {
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 50px;
+	margin-top: 32px;
 	margin-bottom: -150px;
+	padding-top: 50px;
 	font-size: 48px;
 }
 
 @media only screen and (max-width: 1280px){
 	#aotw-logo {
 		margin-top: 5px;
-		margin-bottom: -20px;
 	}
 	#aotw-logo-caption {
-		padding-top: 30px;
+		margin-top: 26px;
 		margin-bottom: -105px;
+		padding-top: 30px;
 		font-size: 38px;
 	}
 }
 @media only screen and (max-width: 768px){
 	#aotw-logo {
-		margin-top: 5px;
 		margin-bottom: -15px;
 	}
 	#aotw-logo-caption {
@@ -51,22 +51,13 @@ body {
 		padding-top: 40px;
 		margin-bottom: -70px;
 		font-size: 26px;
-	}
-	.buttons-container-outer {
-		
 	}
 }
 @media only screen and (max-width: 500px){
 	#aotw-logo {
-		margin-top: 5px;
-		margin-bottom: -15px;
 		width: 455px;
 	}
-	#aotw-logo-caption {
-		margin-top: 0px;
-		padding-top: 40px;
-		margin-bottom: -70px;
-		font-size: 26px;
+	#aotw-logo-caption {	
 		width: 455px;
 	}
 	.buttons-container-outer {
