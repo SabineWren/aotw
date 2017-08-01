@@ -1,10 +1,13 @@
 LOGO
+original -- pictures/aotw_winged_950.png
 Imgur versions (for faster load times without dependence on RSI):
-AotW_logo_475 (compressed) http://i.imgur.com/sH7EeAd.png
-AotW_logo_950 (compressed) http://i.imgur.com/mykYRo9.png
+(compressed) small  http://i.imgur.com/CzEiVRa.png
+(compressed) medium http://i.imgur.com/GMEgy0h.png
+(compressed) large  http://i.imgur.com/Vf84FPa.png
 local versions:
-pictures/aotw_winged_475.png
-pictures/aotw_winged_950.png
+pictures/aotw_small.png
+pictures/aotw_medium.png
+pictures/aotw_large.png
 
 BACKGROUND
 Imgur versions (for faster load times without dependence on RSI):

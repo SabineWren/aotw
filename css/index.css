@@ -19,24 +19,58 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: -80px;
+	margin-top: 10px;
+	margin-bottom: -20px;
 }
-@media only screen and (max-width: 949px){
-	#aotw-logo {
-		margin-bottom: -35px;
-	}
-}
-
 #aotw-logo-caption {
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 50px;
 	margin-bottom: -150px;
 	font-size: 48px;
 }
-@media only screen and (max-width: 949px){
+
+@media only screen and (max-width: 1280px){
+	#aotw-logo {
+		margin-top: 5px;
+		margin-bottom: -20px;
+	}
 	#aotw-logo-caption {
-		padding-top: 35px;
-		margin-bottom: -80px;
-		font-size: 24px;
+		padding-top: 30px;
+		margin-bottom: -105px;
+		font-size: 38px;
+	}
+}
+@media only screen and (max-width: 768px){
+	#aotw-logo {
+		margin-top: 5px;
+		margin-bottom: -15px;
+	}
+	#aotw-logo-caption {
+		margin-top: 0px;
+		padding-top: 40px;
+		margin-bottom: -70px;
+		font-size: 26px;
+	}
+	.buttons-container-outer {
+		
+	}
+}
+@media only screen and (max-width: 500px){
+	#aotw-logo {
+		margin-top: 5px;
+		margin-bottom: -15px;
+		width: 455px;
+	}
+	#aotw-logo-caption {
+		margin-top: 0px;
+		padding-top: 40px;
+		margin-bottom: -70px;
+		font-size: 26px;
+		width: 455px;
+	}
+	.buttons-container-outer {
+		width: 455px;
 	}
 }
 
@@ -78,8 +112,7 @@ p {
 	margin-right: 10px;
 	margin-left: 0px;
 	padding: 5px;
-	background-image: linear-gradient(to bottom, #3498db, #2980b9);
-	background: #1199DD;
+	background: #1199B0;
 	font-size: 18px;
 	text-decoration: none;
 	border-radius: 10px;
@@ -90,8 +123,7 @@ p {
 	font-weight: bold;
 }
 .button-custom:hover {
-	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-	background: #21AAFD;
+	background: #20A9D0;
 	border-color: #BBAA88;
 	text-decoration: none;
 }
@@ -106,6 +138,13 @@ p {
 .button-custom img {
 	float: left;
 	height: 32px;
+}
+
+.button-custom .external {
+	color: white;
+}
+.button-custom:hover .external {
+	color: #F0FF00;
 }
 
 form {
