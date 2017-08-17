@@ -28,7 +28,7 @@ fclose($log_file);
 
 //update production build
 if ($payload->ref === 'refs/heads/master') {
-	exec('./deploy.sh');
+	exec('sudo -u techpriest ./deploy.sh');
 	$last_error = error_get_last();
 	if($last_error !== NULL){
 		$log_file_error = fopen("logs/error_github", "a+");
