@@ -28,9 +28,12 @@ fclose($log_file);
 
 //update production build
 if ($payload->ref === 'refs/heads/master') {
-	echo "running deployment script\n";
 	exec('./deploy.sh');
-	print_r(error_get_last());
+	$last_error = error_get_last();
+	if($last_error !== NULL){
+		$log_file_error = fopen("logs/error_github", "a+");
+		fwrite($log_file_error,"$last_error");
+		fclose($log_file_error);
+	}
 }
-echo "completed deployment script\n";
 ?>
