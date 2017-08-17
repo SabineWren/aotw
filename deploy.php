@@ -1,24 +1,35 @@
-<?php 
+<?php
 try {
-  $payload = json_decode($_REQUEST['payload']);
+     	$payload = json_decode($_REQUEST['payload']);
+	//echo 'payload->ref === ';
+	//echo "$payload->ref\n";
 }
 catch(Exception $e) {
-	file_put_contents(
-		'./logs/error_github',
-		print_r(
-			var_dump($e->getMessage()),
-			TRUE
-		),
-		FILE_APPEND
-	);
+	$log_file_error = fopen("logs/error_github", "a+");
+	if(!$log_file_error){
+		print_r(error_get_last());
+	}
+	
+	fwrite($log_file_error, $_REQUEST['payload']);
+	fwrite($log_file_error,"\n");
+	fwrite($log_file_error, var_dump($e->getMessage());
+	
+	fclose($log_file_error);
 	exit(0);
 }
 
-//log the request
-file_put_contents('./logs/github', print_r($payload, TRUE), FILE_APPEND);
+//logging requires -x on logs/ and -w on logs/github
+$log_file = fopen("logs/github", "a+");
+if(!$log_file){
+	print_r(error_get_last());
+}
+fwrite($log_file, $_REQUEST['payload']);
+fclose($log_file);
 
 //update production build
 if ($payload->ref === 'refs/heads/master') {
-  exec('./deploy.sh');
+	echo "running deployment script\n";
+	exec('./deploy.sh');
 }
+echo "completed deployment script\n";
 ?>
