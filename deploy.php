@@ -30,6 +30,7 @@ fclose($log_file);
 if ($payload->ref === 'refs/heads/master') {
 	echo "running deployment script\n";
 	exec('./deploy.sh');
+	print_r(error_get_last());
 }
 echo "completed deployment script\n";
 ?>
