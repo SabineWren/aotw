@@ -1,0 +1,158 @@
+/*
+	@license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt
+	
+	Copyright (C) 2017 SabineWren
+	https://github.com/SabineWren
+	
+	GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
+	https://www.gnu.org/licenses/agpl-3.0.html
+	
+	@license-end
+*/
+
+body {
+	color: white;
+	text-align: center;
+}
+
+#aotw-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: -20px;
+}
+#aotw-logo-caption {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 32px;
+	margin-bottom: -150px;
+	padding-top: 50px;
+	font-size: 48px;
+}
+
+@media only screen and (max-width: 1280px){
+	#aotw-logo {
+		margin-top: 5px;
+	}
+	#aotw-logo-caption {
+		margin-top: 26px;
+		margin-bottom: -105px;
+		padding-top: 30px;
+		font-size: 38px;
+	}
+}
+@media only screen and (max-width: 768px){
+	#aotw-logo {
+		margin-bottom: -15px;
+	}
+	#aotw-logo-caption {
+		margin-top: 0px;
+		padding-top: 40px;
+		margin-bottom: -70px;
+		font-size: 26px;
+	}
+}
+@media only screen and (max-width: 500px){
+	#aotw-logo {
+		width: 455px;
+	}
+	#aotw-logo-caption {	
+		width: 455px;
+	}
+	.buttons-container-outer {
+		width: 455px;
+	}
+}
+
+h1, h2, h3, h4 {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}
+a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:active h1, a:active h2, a:active h3, a:active h4 {
+	color: orange;
+	text-decoration: none;
+}
+
+p {
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.buttons-container-outer {
+	display: inline-block;
+	margin: auto;
+	margin-top: 10px;
+}
+.buttons-container-inner {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0px;
+	margin-right: 5px;
+}
+
+.button-custom {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-right: 10px;
+	margin-left: 0px;
+	padding: 5px;
+	background: #1199B0;
+	font-size: 18px;
+	text-decoration: none;
+	border-radius: 10px;
+	height: 32px;
+	width: 266px;
+	color: white;
+	border-color: #3498db;
+	font-weight: bold;
+}
+.button-custom:hover {
+	background: #20A9D0;
+	border-color: #BBAA88;
+	text-decoration: none;
+}
+.button-custom h3 {
+	float: left;
+	line-height: 32px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.button-custom img {
+	float: left;
+	height: 32px;
+}
+
+.button-custom .external {
+	color: white;
+}
+.button-custom:hover .external {
+	color: #F0FF00;
+}
+
+form {
+	display: inline-block;
+}
+
+.video-thumbnail-container-outer {
+	display: inline-block;
+	margin: auto;
+}
+.video-thumbnail-container-inner {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.video-thumbnail a, .video-thumbnail img, .video-thumbnail h2 {
+	margin: 10px;
+	width: 420px;
+}
+
