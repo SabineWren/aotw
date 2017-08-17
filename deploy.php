@@ -12,7 +12,7 @@ catch(Exception $e) {
 	
 	fwrite($log_file_error, $_REQUEST['payload']);
 	fwrite($log_file_error,"\n");
-	fwrite($log_file_error, var_dump($e->getMessage());
+	fwrite($log_file_error, var_dump($e->getMessage()) );
 	
 	fclose($log_file_error);
 	exit(0);
