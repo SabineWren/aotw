@@ -16,6 +16,13 @@
 	@license-end
 */
 
+@font-face {
+	font-family: Prototype;
+	src: url(../assets/Prototype.ttf);
+}
+
+/************************/
+
 nav {
   display: block;
 }
@@ -2526,12 +2533,6 @@ label {
   perspective: 1000;
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label,.fly-now-home-wrapper .fly-now-home-btn .label
-* {
-  font: 27px/58px 'Orbitron';
-  color: #ffefc7;
-}
-
 .fly-now-home-wrapper .fly-now-home-btn .label:hover .chevron-wrapper
 .chevron {
   -webkit-transition-duration: 0.2s;
@@ -3271,6 +3272,11 @@ label {
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
+}
+
+.fly-now-home-wrapper .inner {
+	font: 32px/53px 'Prototype';
+	color: #ffefc7;
 }
 
 .fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.pillar
