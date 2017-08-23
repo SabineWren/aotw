@@ -1,5 +1,5 @@
 - autodeployment failed once due to the git user.email resetting on server; may need to implement a workaround
 - reduce log verbosity from auto-deployment
 - simplify button prototype
-- begin implementing mobile mockup (not saved on repo)
+- make gradients responsive
 
