@@ -1,0 +1,53 @@
+
+
+body {
+  background: #000;
+}
+
+.container-menu {
+	position: relative;
+	display: block;
+	text-align: center;
+	overflow-x: hidden;
+	font-family: Orbitron,sans-serif,Arial,Verdana;
+}
+
+.container-menu::before {
+	content: '';
+	position: absolute;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	width: 100%;
+	left: 0;
+	right: 0;
+	border-top: 3px solid #d0c793;
+	top: 0;
+	box-shadow: 0   8px 28px 0     rgba(226, 97, 11, 0.51),
+		0  20px 38px 0     rgba(226, 97, 11, 0.78),
+		0  -15px  20px  0 rgba(226, 97, 11, 0.64);
+}
+
+.container-menu .title:hover {
+	color: #fdfae7;
+}
+
+.container-menu .title {
+	color: #848060;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-shadow: 0 0 10px rgba(255, 118, 17, 0.72), 0 0 10px rgba(255, 118, 17, 0.72);
+}
+
+.container-menu a {
+	display: inline-block;
+	position: relative;
+	width: 25%;
+}
+
+.container-menu a h3 {
+	display: inline-block;
+	position: relative;
+}
+
+

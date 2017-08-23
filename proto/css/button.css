@@ -6,10 +6,6 @@
 	Copyright (C) 2017 SabineWren
 	https://github.com/SabineWren
 
-	Copyright (C) 2012-2017
-	Cloud Imperium Games Corporation & Roberts Space Industries Corp.
-	Cloud Imperium Games UK Ltd. & Roberts Space Industries International Ltd.
-
 	GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
 	https://www.gnu.org/licenses/agpl-3.0.html
 
@@ -17,8 +13,10 @@
 */
 
 @font-face {
-	font-family: Prototype;
-	src: url(../assets/Prototype.ttf);
+	font-family: 'Prototype';
+	src: url(../assets/Prototype.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 nav {
@@ -28,16 +26,6 @@ nav {
 html {
   font-size: 100%;
   outline: 0;
-}
-
-html {
-  font-family: sans-serif;
-}
-
-body {
-  margin: 0;
-  outline: 0;
-  min-width: 480px;
 }
 
 a:focus {
@@ -50,23 +38,6 @@ a:active,a:hover {
 
 b {
   font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-body {
-  background: #000;
-}
-
-.wrapper {
-  width: auto;
-  min-width: 120px;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 30px;
 }
 
 .separator {
@@ -114,31 +85,27 @@ label {
 
 .fly-now-home-wrapper {
   width: 100%;
-  position: absolute;
+  position: relative;
   z-index: 11;
   overflow: hidden;
-  height: 139px;
-  top: -60px;
-}
-
-.fly-now-home-wrapper::before,.fly-now-home-wrapper::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  z-index: 9;
-}
-
-.fly-now-home-wrapper::before {
-  top: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 80%);
+  height: 100px;
 }
 
 .fly-now-home-wrapper::after {
-  bottom: 5px;
-  background: rgba(0, 0, 0, 0.8);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%);
+  content: '';
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+
+.fly-now-home-wrapper::after {
+	bottom: 5px;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.5) 0%,
+		rgba(0, 0, 0, 0.5) 10%,
+		rgba(0, 0, 0, 0) 100%
+	);
 }
 
 .fly-now-home-wrapper .fly-now-home-btn {
@@ -229,7 +196,8 @@ label {
   opacity: 0.9;
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label:hover .line-wrapper .line::before,.fly-now-home-wrapper .fly-now-home-btn .label:hover .line-wrapper .line::after {
+.fly-now-home-wrapper .fly-now-home-btn .label:hover .line-wrapper .line::before,
+.fly-now-home-wrapper .fly-now-home-btn .label:hover .line-wrapper .line::after {
   transition-duration: 0.2s;
   perspective: 1000px;
   transition-delay: 0s;
@@ -360,7 +328,8 @@ label {
   z-index: 15;
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron::before,.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron::after {
   content: '';
   position: absolute;
   display: block;
@@ -384,7 +353,8 @@ label {
   perspective: 1000px;
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small::before,.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small::after {
   height: 10px;
 }
 
@@ -393,7 +363,8 @@ label {
   box-shadow: -9px 0px 26px 2px #e2610b, 0px 0px 10px rgba(226, 97, 11, 0.5);
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small.left::before,.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small.left::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small.left::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small.left::after {
   right: -17px;
 }
 
@@ -410,7 +381,8 @@ label {
   box-shadow: 9px 0px 26px 2px #e2610b, 0px 0px 10px rgba(226, 97, 11, 0.5);
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small.right::before,.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small.right::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small.right::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.small.right::after {
   left: -17px;
 }
 
@@ -431,7 +403,8 @@ label {
   transition-delay: 0s;
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat::before,.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat::after {
   height: 22px;
 }
 
@@ -440,7 +413,8 @@ label {
   box-shadow: 9px 0px 26px 2px #e2610b, 0px 0px 10px rgba(226, 97, 11, 0.5);
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat.left::before,.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat.left::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat.left::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat.left::after {
   left: -17px;
 }
 
@@ -457,7 +431,8 @@ label {
   box-shadow: -9px 0px 26px 2px #e2610b, 0px 0px 10px rgba(226, 97, 11, 0.5);
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat.right::before,.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat.right::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat.right::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.fat.right::after {
   right: -17px;
 }
 
@@ -478,7 +453,8 @@ label {
   filter: drop-shadow(0 2px 3px rgba(205, 101, 0, 0.25));
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper::before,.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper::after {
   content: '';
   position: absolute;
   opacity: 0.5;
@@ -510,7 +486,8 @@ label {
   opacity: 0.66;
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line::before,.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line::after {
   content: '';
   position: absolute;
   top: 0;
@@ -529,7 +506,8 @@ label {
   border-right: 12px solid transparent;
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.top::before,.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.top::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.top::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.top::after {
   transition-duration: 0.2s;
   perspective: 1000px;
 }
@@ -559,7 +537,8 @@ label {
   transition-delay: 0s;
 }
 
-.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.bottom::before,.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.bottom::after {
+.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.bottom::before,
+.fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.bottom::after {
   transition-duration: 0.2s;
   perspective: 1000px;
   transition-delay: 0s;
