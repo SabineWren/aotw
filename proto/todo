@@ -1,5 +1,11 @@
+SERVER
 - autodeployment failed once due to the git user.email resetting on server; may need to implement a workaround
 - reduce log verbosity from auto-deployment
-- simplify button prototype
-- make gradients responsive
+
+PROTOTYPE
+- unifiy the text (alignment, colour, size, font)
+- add headlines to each section (tournaments, videos, etc.)
+
+PRODUCTION
+- refactor button prototype
 

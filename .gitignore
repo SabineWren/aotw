@@ -6,3 +6,5 @@ org_icons*
 log_sched
 error
 logs
+*.xcf
+
