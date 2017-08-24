@@ -17,6 +17,7 @@
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<link rel="icon" type="image/png" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/hud.css">
 	<link rel="stylesheet" type="text/css" href="css/button.css">
 	<title>Angels of the Warp</title>
 </head>
@@ -70,7 +71,7 @@
 	<div class="menu-item">
 		<a href="#"><h3 class="title global-glowy">OrgFinder</h3></a>
 	</div><div class="menu-item">
-		<a href="#"><h3 class="title global-glowy">RSI</h3></a>
+		<a href="https://robertsspaceindustries.com/orgs/aotw"><h3 class="title global-glowy">RSI</h3></a>
 	</div><div class="menu-item">
 		<a href="#"><h3 class="title global-glowy">Media</h3></a>
 	</div>
@@ -147,7 +148,7 @@
 	<p>
 		We are the premiere <b>mercenary outfit</b> in Star Citizen.
 		As an <b>elite group</b> of loyal veterans, we provide high quality
-		marines and pilots for <b>player versus player</b> engagemnts, for or against
+		marines and pilots for <b>player versus player</b> engagements, for or against
 		factions of our choosing.
 	</p>
 	<br>
@@ -155,5 +156,94 @@
 </div>
 
 <div style="display:block;height:80px;"></div>
+
+<div class="svg-container">
+<svg width="100%" height="100%" viewBox="0 0 1280 720">
+	<defs>
+	<filter id="f1" x="0" y="0">
+		<feGaussianBlur stdDeviation="3" />
+	</filter>
+	</defs>
+	
+	<polyline class="line project" id="lower-left-main"
+	points="
+		  0,620
+		 10,620
+		 60,680 
+		225,715
+		255,690
+		360,710 
+		365,720
+	"/>
+	<polyline class="line reflect" id="lower-left-main-shadow"
+	points="
+		  0,608
+		 15,608
+		 66,668
+		232,705
+		268,681
+		359,698
+		370,721
+	"/>
+	
+	<polyline class="line project" id="lower-right-main"
+	points="
+		  910,720
+		  925,704
+		  1021,689
+		  1056,711
+		  1221,672
+		  1268,614
+		  1280,614
+	"/>
+	<polyline class="line reflect" id="lower-right-main-shadow"
+	points="
+		  902,720
+		  920,697
+		  1007,685
+		  1047,701
+		  1214,664
+		  1259,607
+		  1280,607
+	"/>
+	
+	<path class="line detail" id="medical-outline"
+	d="
+		M 73,602
+		L 66,643
+		Q 66,647 67,649
+		L 75,659
+		Q 76,660 78,661
+		L108,668
+		Q115,668 118,661
+		L127,611
+		Q129,603 122,602
+		L 87,596
+		Q 75,594 73,602
+		Z
+	"/>
+	
+	<path class="line detail" id="cross-outline"
+	d="
+		M140,652
+		Q136,652 136,654
+		L132,667
+		Q132,672 135,672
+		L150,675
+		Q154,675 154,671
+		L156,657
+		Q156,656 154,655
+		Z
+	"/>
+	
+	<path class="line bright-detail" id="cross"
+	d="
+		M138,662
+		L151,665
+		M146,658
+		L143,670
+	"/>
+</svg>
+</div>
 </body>
 </html>
