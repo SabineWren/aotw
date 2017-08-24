@@ -17,7 +17,7 @@
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<link rel="icon" type="image/png" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/hud.css">
+	<link rel="stylesheet" type="text/css" href="css-dev/hud.css">
 	<link rel="stylesheet" type="text/css" href="css/button.css">
 	<title>Angels of the Warp</title>
 </head>
@@ -160,8 +160,70 @@
 <div class="svg-container">
 <svg width="100%" height="100%" viewBox="0 0 1280 720">
 	<defs>
-	<filter id="f1" x="0" y="0">
-		<feGaussianBlur stdDeviation="3" />
+	<filter id="f-dropshadow1">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blurred"/>
+		
+		<feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blurred1"/>
+		<feOffset in="blurred1" dx="0" dy="4" result="offsetblur1"/>
+		<feColorMatrix in="offsetblur1" type="matrix" result="dropshadow1"
+		values="0.6 0 0 0 0 0 0.6 0 0 0 0 0 0.6 0 0 0 0 0 1 0" />
+		
+		<feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blurred2"/>
+		<feOffset in="blurred2" dx="0" dy="4" result="offsetblur2"/>
+		<feColorMatrix in="offsetblur2" type="matrix" result="dropshadow2"
+		values="0.6 0 0 0 0 0 0.6 0 0 0 0 0 0.6 0 0 0 0 0 1 0" />
+		
+		<feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blurred3"/>
+		<feOffset in="blurred3" dx="0" dy="6" result="offsetblur3"/>
+		<feColorMatrix in="offsetblur3" type="matrix" result="dropshadow3"
+		values="1.0 0 0 0 0 0 1.0 0 0 0 0 0 1.0 0 0 0 0 0 1 0" />
+		
+		<feMerge>
+			<feMergeNode in="dropshadow3"/>
+			<feMergeNode in="dropshadow2"/>
+			<feMergeNode in="dropshadow1"/>
+			<feMergeNode in="blurred"/>
+		</feMerge>
+	</filter>
+	
+	<filter id="f-dropshadow2">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blurred"/>
+		
+		<feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blurred1"/>
+		<feOffset in="blurred1" dx="0" dy="10" result="offsetblur1"/>
+		<feColorMatrix in="offsetblur1" type="matrix" result="dropshadow1"
+		values="0.5 0 0 0 0 0 0.5 0 0 0 0 0 0.5 0 0 0 0 0 1 0" />
+		
+		<feMerge>
+			<feMergeNode in="dropshadow1"/>
+			<feMergeNode in="blurred"/>
+		</feMerge>
+	</filter>
+	
+	<filter id="f-dropshadow3">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blurred"/>
+		
+		<feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blurred1"/>
+		<feOffset in="blurred1" dx="0" dy="2" result="offsetblur1"/>
+		<feColorMatrix in="offsetblur1" type="matrix" result="dropshadow1"
+		values="0.8 0 0 0 0 0 0.8 0 0 0 0 0 0.8 0 0 0 0 0 1 0" />
+		
+		<feMerge>
+			<feMergeNode in="dropshadow1"/>
+			<feMergeNode in="blurred"/>
+		</feMerge>
+	</filter>
+	
+	<filter id="f-dropshadow4">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blurred1"/>
+		<feOffset in="blurred1" dx="0" dy="0" result="offsetblur1"/>
+		<feColorMatrix in="offsetblur1" type="matrix" result="dropshadow1"
+		values="0.8 0 0 0 0 0 0.8 0 0 0 0 0 0.8 0 0 0 0 0 1 0" />
+		
+		<feMerge>
+			<feMergeNode in="dropshadow1"/>
+			<feMergeNode in="SourceGraphic"/>
+		</feMerge>
 	</filter>
 	</defs>
 	

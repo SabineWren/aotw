@@ -66,13 +66,11 @@ b {
 }
 
 .chevron.left {
-  -webkit-transform: skew(45deg, 0deg);
   transform: skew(45deg, 0deg);
   box-shadow: 0 0 12px 1px rgba(0, 112, 202, 0.6), 5px -1px 20px 2px rgba(0,112,202,0.6);
 }
 
 .chevron.right {
-  -webkit-transform: skew(-45deg, 0deg);
   transform: skew(-45deg, 0deg);
   box-shadow: 0 0 12px 1px rgba(0, 112, 202, 0.6), -5px -1px 20px 2px rgba(0,112,202,0.6);
 }
@@ -114,7 +112,6 @@ label {
   width: 332px;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 10;
   top: 0px;
@@ -127,24 +124,18 @@ label {
   position: absolute;
   left: 50%;
   height: 61px;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   text-transform: uppercase;
   text-align: center;
   top: 21px;
   text-shadow: 0 0 13px rgba(76, 33, 4, 0.79), 0 0 32px rgba(255, 187, 24, 0.6);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   transition-duration: 0.3s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
 .fly-now-home-wrapper .fly-now-home-btn .label:hover .chevron-wrapper .chevron {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
   background: #fffcd8;
@@ -187,7 +178,6 @@ label {
 }
 
 .fly-now-home-wrapper .fly-now-home-btn .label:hover .line-wrapper {
-  -webkit-filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.66));
   filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.66));
 }
 
@@ -201,7 +191,6 @@ label {
 
 .fly-now-home-wrapper .fly-now-home-btn .label:hover .line-wrapper .line {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
   opacity: 0.9;
@@ -210,7 +199,6 @@ label {
 .fly-now-home-wrapper .fly-now-home-btn .label:hover .line-wrapper .line::before,
 .fly-now-home-wrapper .fly-now-home-btn .label:hover .line-wrapper .line::after {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
 }
@@ -289,7 +277,6 @@ label {
 }
 
 .fly-now-home-wrapper .fly-now-home-btn .label:active .line-wrapper {
-  -webkit-filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.56));
   filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.56));
 }
 
@@ -328,7 +315,6 @@ label {
 .fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper {
   position: absolute;
   z-index: 14;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
   left: 0;
   right: 0;
@@ -353,12 +339,10 @@ label {
 }
 
 .fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.left {
-  -webkit-transform: translateZ(0) skew(45deg, 0deg);
   transform: translateZ(0) skew(45deg, 0deg);
 }
 
 .fly-now-home-wrapper .fly-now-home-btn .label .chevron-wrapper .chevron.right {
-  -webkit-transform: translateZ(0) skew(-45deg, 0deg);
   transform: translateZ(0) skew(-45deg, 0deg);
 }
 
@@ -366,7 +350,6 @@ label {
   top: 1px;
   height: 12px;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
@@ -416,7 +399,6 @@ label {
   top: 13px;
   height: 36px;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
 }
@@ -468,7 +450,6 @@ label {
   top: 1px;
   height: 61px;
   width: 100%;
-  -webkit-filter: drop-shadow(0 2px 3px rgba(205, 101, 0, 0.25));
   filter: drop-shadow(0 2px 3px rgba(205, 101, 0, 0.25));
 }
 
@@ -483,21 +464,18 @@ label {
   top: 20px;
   background: transparent;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
 .fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper::before {
   box-shadow: -48px 3px 37px 1px rgba(251, 169, 40, 0.66);
   left: 60px;
-  -webkit-transform: skew(45deg);
   transform: skew(45deg);
 }
 
 .fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper::after {
   box-shadow: 48px 3px 37px 1px rgba(251, 169, 40, 0.66);
   right: 60px;
-  -webkit-transform: skew(-45deg);
   transform: skew(-45deg);
 }
 
@@ -516,14 +494,12 @@ label {
   height: 1px;
   width: 100%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.top {
   width: 300px;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   border-bottom: 12px solid #060505;
   border-left: 12px solid transparent;
@@ -533,7 +509,6 @@ label {
 .fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.top::before,
 .fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.top::after {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
@@ -558,7 +533,6 @@ label {
   top: 1px;
   width: 184px;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
 }
@@ -566,7 +540,6 @@ label {
 .fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.bottom::before,
 .fly-now-home-wrapper .fly-now-home-btn .label .line-wrapper .line.bottom::after {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
 }
@@ -575,7 +548,6 @@ label {
   top: -11px;
   width: 200px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background: #e08400;
   background: linear-gradient(to right, #e08400 0%, rgba(201, 77, 0, 0.86) 10%, rgba(59, 25, 1, 0.72) 20%, rgba(17, 10, 2, 0.3) 50%, rgba(59, 25, 1, 0.72) 80%, rgba(201, 77, 0, 0.86) 90%, #e08400 100%);
@@ -591,7 +563,6 @@ label {
   top: -1px;
   width: 1920px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -631,7 +602,6 @@ label {
 
 .fly-now-home-wrapper > .line-wrapper .line.middle.right {
   right: 0;
-  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -662,7 +632,6 @@ label {
 
 .fly-now-home-wrapper .line-wrapper .line {
 	z-index: 10;
-	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 }
 
@@ -678,13 +647,11 @@ label {
 }
 
 .fly-now-home-wrapper .home-carousel-featured-indicator .nav {
-	display: -webkit-box;
 	display: flex;
 	max-width: 1110px;
 	width: 100%;
 	height: 25px;
 	z-index: 66;
-	-webkit-box-pack: start;
 	justify-content: flex-start;
 	top: 0;
 	position: relative;
@@ -692,7 +659,6 @@ label {
 }
 
 .fly-now-home-wrapper .home-carousel-featured-indicator .nav .indicator-separator {
-	-webkit-box-flex: 1;
 	flex: 1;
 	display: block;
 }
@@ -748,20 +714,16 @@ label {
 
 .fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.leftside.wing1.inner,
 .fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.leftside.wing2.inner {
-	-webkit-transform: skew(55deg);
 	transform: skew(55deg);
 }
 .fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.leftside.wing3.inner {
-	-webkit-transform: skew(45deg);
 	transform: skew(45deg);
 }
 .fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.rightside.wing1.inner,
 .fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.rightside.wing2.inner {
-	-webkit-transform: skew(-55deg);
 	transform: skew(-55deg);
 }
 .fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.rightside.wing3.inner {
-	-webkit-transform: skew(-45deg);
 	transform: skew(-45deg);
 }
 

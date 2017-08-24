@@ -18,7 +18,6 @@ body .svg-container {
 
 .line.project {
 	stroke-width:3;
-	-webkit-filter: url("#f-dropshadow1");
 	filter: url("#f-dropshadow1");
 	/*filter:
 	blur(1px)
@@ -38,7 +37,6 @@ body .svg-container {
 .line.reflect {
 	z-index: 0;
 	stroke-width:1;
-	-webkit-filter: url("#f-dropshadow2");
 	filter: url("#f-dropshadow2");
 	/*filter:
 	blur(1px)
@@ -51,7 +49,6 @@ body .svg-container {
 
 .line.detail {
 	stroke-width:3;
-	-webkit-filter: url("#f-dropshadow3");
 	filter: url("#f-dropshadow3");
 	/*filter:
 	blur(1px)
@@ -62,7 +59,6 @@ body .svg-container {
 }
 .line.bright-detail {
 	stroke-width:4;
-	-webkit-filter: url("#f-dropshadow4");
 	filter: url("#f-dropshadow4");
 	/*filter:
 	drop-shadow(

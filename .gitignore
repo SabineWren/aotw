@@ -7,4 +7,4 @@ log_sched
 error
 logs
 *.xcf
-
+node_modules
