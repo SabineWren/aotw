@@ -18,8 +18,8 @@ body .svg-container {
 
 .line.project {
 	stroke-width:3;
-	-webkit-filter: url("../index.html#f-dropshadow1");
-	filter: url("../index.html#f-dropshadow1");
+	-webkit-filter: url("/proto/index.html#f-dropshadow1");
+	filter: url("/proto/index.html#f-dropshadow1");
 	/*filter:
 	blur(1px)
 	drop-shadow(
@@ -38,8 +38,8 @@ body .svg-container {
 .line.reflect {
 	z-index: 40;
 	stroke-width:1;
-	-webkit-filter: url("../index.html#f-dropshadow2");
-	filter: url("../index.html#f-dropshadow2");
+	-webkit-filter: url("/proto/index.html#f-dropshadow2");
+	filter: url("/proto/index.html#f-dropshadow2");
 	/*filter:
 	blur(1px)
 	drop-shadow(
@@ -51,8 +51,8 @@ body .svg-container {
 
 .line.detail {
 	stroke-width:3;
-	-webkit-filter: url("../index.html#f-dropshadow3");
-	filter: url("../index.html#f-dropshadow3");
+	-webkit-filter: url("/proto/index.html#f-dropshadow3");
+	filter: url("/proto/index.html#f-dropshadow3");
 	/*filter:
 	blur(1px)
 	drop-shadow(
@@ -62,8 +62,8 @@ body .svg-container {
 }
 .line.bright-detail {
 	stroke-width:4;
-	-webkit-filter: url("../index.html#f-dropshadow4");
-	filter: url("../index.html#f-dropshadow4");
+	-webkit-filter: url("/proto/index.html#f-dropshadow4");
+	filter: url("/proto/index.html#f-dropshadow4");
 	/*filter:
 	drop-shadow(
 		0px 0px 1px
