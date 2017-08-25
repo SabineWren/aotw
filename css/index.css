@@ -101,17 +101,36 @@ h2 {
 	width: 100%;
 	min-width: 500px;
 }
-.container_trophies p {
-	line-height: 14px;
-	font-size:   14px;
-}
 .container_trophies .trophy {
 	display: inline-block;
 	vertical-align: top;
-	width: 20%;
+	width: 30%;
 	min-width: 150px;
-	max-width: 250px;
+	max-width: 400px;
 }
+
+.container_trophies .trophy .container-names {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 225px;
+	margin: auto;
+}
+
+.container_trophies .trophy p {
+	display: inline-block;
+	min-width: 50%;
+	line-height: 14px;
+	font-size:   14px;
+	font-family: serif;
+	font-weight: 500;
+}
+@media only screen and (max-width: 1280px){
+	.container_trophies .trophy p {
+		min-width: 100px;
+	}
+}
+
 
 /* VIDEO */
 .container-videos {

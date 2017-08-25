@@ -28,7 +28,6 @@ body .container-HUD-button {
   text-align: center;
   top: 21px;
   text-shadow: 0 0 13px rgba(76, 33, 4, 0.79), 0 0 32px rgba(255, 187, 24, 0.6);
-  user-select: none;
   transition-duration: 0.3s;
   perspective: 1000px;
 }
