@@ -228,11 +228,13 @@ a {
 .container-description img {
 	position:relative;
 	width: 100%;
+	min-width: 500px;
 	margin-bottom: -10%;
 }
 
 .container-description .description-header {
 	position: absolute;
+	min-width: 500px;
 	top: 0;
 	left: 0;
 	right: 0;
