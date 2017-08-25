@@ -41,6 +41,13 @@ a {
   cursor: pointer;
 }
 
+h2 {
+	font: 26px/26px 'Prototype';
+	color: #DCDCDC;
+	font-weight: 500;
+	margin: 10px;
+}
+
 .global-glowy {
 	color: #C6B089;
 	text-shadow: 0 0 10px rgba(255, 118, 17, 0.72), 0 0 10px rgba(255, 118, 17, 0.72);
@@ -53,15 +60,22 @@ a {
 .aotw-logo {
 	position: relative;
 	display: block;
+	width: 100%;
 	min-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 	z-index: 2;
 }
-@media only screen and (max-width: 950px){
+@media only screen and (min-width: 950px){
 	.aotw-logo {
-		width: 100%;
+		width: 950px;
 	}
+}
+
+.wide-picture {
+	width: 100%;
+	min-width: 500px;
 }
 
 .logo-background-pic {
@@ -123,7 +137,7 @@ a {
 	z-index: 1;
 }
 
-.container-videos .video .thumbnail > img {
+.container-videos .video .thumbnail > picture img {
 	display: block;
 	position: relative;
 	width: 100%;
@@ -176,12 +190,11 @@ a {
 .container-description {
 	display: block;
 	position: relative;
+	margin-bottom: 10%;
 }
 
-.container-description img {
+.container-description .wide-picture {
 	position:relative;
-	width: 100%;
-	min-width: 500px;
 	margin-bottom: -10%;
 }
 
@@ -293,7 +306,6 @@ body .container-HUD-button {
   width: 332px;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 10;
   top: 0px;
@@ -306,24 +318,18 @@ body .container-HUD-button {
   position: absolute;
   left: 50%;
   height: 61px;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   text-transform: uppercase;
   text-align: center;
   top: 21px;
   text-shadow: 0 0 13px rgba(76, 33, 4, 0.79), 0 0 32px rgba(255, 187, 24, 0.6);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   transition-duration: 0.3s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
 .fly-now-home-btn .label:hover .chevron-wrapper .chevron {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
   background: #fffcd8;
@@ -366,7 +372,6 @@ body .container-HUD-button {
 }
 
 .fly-now-home-btn .label:hover .line-wrapper {
-  -webkit-filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.66));
   filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.66));
 }
 
@@ -380,7 +385,6 @@ body .container-HUD-button {
 
 .fly-now-home-btn .label:hover .line-wrapper .line {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
   opacity: 0.9;
@@ -389,7 +393,6 @@ body .container-HUD-button {
 .fly-now-home-btn .label:hover .line-wrapper .line::before,
 .fly-now-home-btn .label:hover .line-wrapper .line::after {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
 }
@@ -468,7 +471,6 @@ body .container-HUD-button {
 }
 
 .fly-now-home-btn .label:active .line-wrapper {
-  -webkit-filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.56));
   filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.56));
 }
 
@@ -507,7 +509,6 @@ body .container-HUD-button {
 .fly-now-home-btn .label .chevron-wrapper {
   position: absolute;
   z-index: 14;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
   left: 0;
   right: 0;
@@ -532,12 +533,10 @@ body .container-HUD-button {
 }
 
 .fly-now-home-btn .label .chevron-wrapper .chevron.left {
-  -webkit-transform: translateZ(0) skew(45deg, 0deg);
   transform: translateZ(0) skew(45deg, 0deg);
 }
 
 .fly-now-home-btn .label .chevron-wrapper .chevron.right {
-  -webkit-transform: translateZ(0) skew(-45deg, 0deg);
   transform: translateZ(0) skew(-45deg, 0deg);
 }
 
@@ -545,7 +544,6 @@ body .container-HUD-button {
   top: 1px;
   height: 12px;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
@@ -595,7 +593,6 @@ body .container-HUD-button {
   top: 13px;
   height: 36px;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
 }
@@ -647,7 +644,6 @@ body .container-HUD-button {
   top: 1px;
   height: 61px;
   width: 100%;
-  -webkit-filter: drop-shadow(0 2px 3px rgba(205, 101, 0, 0.25));
   filter: drop-shadow(0 2px 3px rgba(205, 101, 0, 0.25));
 }
 
@@ -662,21 +658,18 @@ body .container-HUD-button {
   top: 20px;
   background: transparent;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
 .fly-now-home-btn .label .line-wrapper::before {
   box-shadow: -48px 3px 37px 1px rgba(251, 169, 40, 0.66);
   left: 60px;
-  -webkit-transform: skew(45deg);
   transform: skew(45deg);
 }
 
 .fly-now-home-btn .label .line-wrapper::after {
   box-shadow: 48px 3px 37px 1px rgba(251, 169, 40, 0.66);
   right: 60px;
-  -webkit-transform: skew(-45deg);
   transform: skew(-45deg);
 }
 
@@ -695,14 +688,12 @@ body .container-HUD-button {
   height: 1px;
   width: 100%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .fly-now-home-btn .label .line-wrapper .line.top {
   width: 300px;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   border-bottom: 12px solid #060505;
   border-left: 12px solid transparent;
@@ -712,7 +703,6 @@ body .container-HUD-button {
 .fly-now-home-btn .label .line-wrapper .line.top::before,
 .fly-now-home-btn .label .line-wrapper .line.top::after {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
@@ -737,7 +727,6 @@ body .container-HUD-button {
   top: 1px;
   width: 184px;
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
 }
@@ -745,7 +734,6 @@ body .container-HUD-button {
 .fly-now-home-btn .label .line-wrapper .line.bottom::before,
 .fly-now-home-btn .label .line-wrapper .line.bottom::after {
   transition-duration: 0.2s;
-  -webkit-perspective: 1000px;
   perspective: 1000px;
   transition-delay: 0s;
 }
@@ -754,7 +742,6 @@ body .container-HUD-button {
   top: -11px;
   width: 200px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background: #e08400;
   background: linear-gradient(to right, #e08400 0%, rgba(201, 77, 0, 0.86) 10%, rgba(59, 25, 1, 0.72) 20%, rgba(17, 10, 2, 0.3) 50%, rgba(59, 25, 1, 0.72) 80%, rgba(201, 77, 0, 0.86) 90%, #e08400 100%);

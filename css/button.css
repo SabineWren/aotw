@@ -1,0 +1,290 @@
+/*
+	@license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt
+
+	This is an unofficial Fansite.
+
+	Copyright (C) 2017 SabineWren
+	https://github.com/SabineWren
+
+	GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
+	https://www.gnu.org/licenses/agpl-3.0.html
+
+	@license-end
+*/
+
+@font-face {
+	font-family: 'Prototype';
+	src: url(../assets/Prototype.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+nav {
+  display: block;
+}
+
+html {
+  font-size: 100%;
+  outline: 0;
+}
+
+a:focus {
+  outline: 0;
+}
+
+a:active,a:hover {
+  outline: 0;
+}
+
+b {
+  font-weight: bold;
+}
+
+.separator {
+  height: 5px;
+  width: 100%;
+  background: #8cf1ff;
+  box-shadow: 0 0 40px rgba(0, 153, 255, 0.7);
+  margin: 20px auto;
+}
+
+.chevron {
+  width: 6px;
+  background: #42edf8;
+}
+
+.chevron.small {
+  height: 8px;
+  position: relative;
+  top: 0;
+}
+
+.chevron.fat {
+  height: 31px;
+  position: relative;
+  top: 0;
+}
+
+.chevron.left {
+  -webkit-transform: skew(45deg, 0deg);
+  transform: skew(45deg, 0deg);
+  box-shadow: 0 0 12px 1px rgba(0, 112, 202, 0.6), 5px -1px 20px 2px rgba(0,112,202,0.6);
+}
+
+.chevron.right {
+  -webkit-transform: skew(-45deg, 0deg);
+  transform: skew(-45deg, 0deg);
+  box-shadow: 0 0 12px 1px rgba(0, 112, 202, 0.6), -5px -1px 20px 2px rgba(0,112,202,0.6);
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #7696ae;
+  display: block;
+  margin: 8px 0;
+}
+
+.fly-now-home-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 11;
+  overflow: hidden;
+  height: 100px;
+}
+
+.fly-now-home-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+
+.fly-now-home-wrapper::after {
+	bottom: 5px;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.5) 0%,
+		rgba(0, 0, 0, 0.5) 10%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.fly-now-home-wrapper>.line-wrapper {
+  top: -1px;
+  width: 1920px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.fly-now-home-wrapper > .line-wrapper::before,.fly-now-home-wrapper>.line-wrapper::after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 23px;
+  width: 100%;
+  top: 35px;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px 0;
+}
+
+.fly-now-home-wrapper>.line-wrapper::before {
+  left: -100%;
+}
+
+.fly-now-home-wrapper>.line-wrapper::after {
+  right: -100%;
+}
+
+.fly-now-home-wrapper > .line-wrapper .line.middle {
+  top: 35px;
+  width: 860px;
+  height: 23px;
+  position: absolute;
+  margin-top: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.94) 90%, #000 95%, #000 100%);
+}
+
+.fly-now-home-wrapper > .line-wrapper .line.middle.left {
+  left: 0;
+}
+
+.fly-now-home-wrapper > .line-wrapper .line.middle.right {
+  right: 0;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.fly-now-home-wrapper > .line-wrapper .line.middle::before,.fly-now-home-wrapper > .line-wrapper .line.middle::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+}
+
+.fly-now-home-wrapper > .line-wrapper .line.middle::before {
+  width: 833px;
+  top: -1px;
+  background: #000;
+  background: linear-gradient(to right, #000 0%, #3b1901 25%, #c94d00 55%, #c08400 100%);
+}
+
+.fly-now-home-wrapper > .line-wrapper .line.middle::after {
+  width: 860px;
+  top: 23px;
+  background: #000;
+  background: linear-gradient(to right, #000 0%, #3b1901 40%, #c94d00 70%, #c08400 100%);
+}
+
+.fly-now-home-wrapper .line-wrapper {
+  z-index: 9;
+  position: relative;
+}
+
+.fly-now-home-wrapper .line-wrapper .line {
+	z-index: 10;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.fly-now-home-wrapper .home-carousel-featured-indicator {
+  z-index: 9;
+  position: relative;
+  top: 34px;
+  max-width: 1140px;
+  min-width: 320px;
+  width: 100%;
+  height: 24px;
+  margin: auto;
+}
+
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav {
+	display: -webkit-box;
+	display: flex;
+	max-width: 1110px;
+	width: 100%;
+	height: 25px;
+	z-index: 66;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+	top: 0;
+	position: relative;
+	margin: auto;
+}
+
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .indicator-separator {
+	-webkit-box-flex: 1;
+	flex: 1;
+	display: block;
+}
+
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view {
+	position: relative;
+	display: block;
+	margin-top: 5px;
+	margin-right: 11px;
+	margin-left: 7px;
+}
+
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.inner {
+	background: #e58605;
+	background: rgba(229, 134, 5, 0.6);
+}
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view:hover.inner {
+	background: #f0e4af;
+	opacity: 0.95;
+}
+
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.inner {
+	display: block;
+	transition-duration: 0.3s;
+}
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.wing1.inner {
+	width: 52px;
+	height: 9px;
+}
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.wing2.inner {
+	width: 52px;
+	height: 9px;
+}
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.wing3.inner {
+	width: 42px;
+	height: 12px;
+}
+@media only screen and (max-width: 1000px){
+	.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.wing2.inner {
+		display: none;
+	}
+}
+@media only screen and (max-width: 750px){
+	.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.wing3.inner {
+		display: none;
+	}
+}
+@media only screen and (max-width: 499px){
+	.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.wing1.inner {
+		display: none;
+	}
+}
+
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.leftside.wing1.inner,
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.leftside.wing2.inner {
+	-webkit-transform: skew(55deg);
+	transform: skew(55deg);
+}
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.leftside.wing3.inner {
+	-webkit-transform: skew(45deg);
+	transform: skew(45deg);
+}
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.rightside.wing1.inner,
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.rightside.wing2.inner {
+	-webkit-transform: skew(-55deg);
+	transform: skew(-55deg);
+}
+.fly-now-home-wrapper .home-carousel-featured-indicator .nav .view.rightside.wing3.inner {
+	-webkit-transform: skew(-45deg);
+	transform: skew(-45deg);
+}
+

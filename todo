@@ -1,0 +1,10 @@
+SERVER
+- autodeployment failed once due to the git user.email resetting on server; may need to implement a workaround
+- reduce log verbosity from auto-deployment
+
+PRODUCTION
+- refactor button prototype
+- outsource some images to imgur
+- add more decorative HUD elements
+- animate a "Meet Us" popup
+
