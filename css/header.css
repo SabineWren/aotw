@@ -1,0 +1,146 @@
+/*
+	@license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt
+
+	This is an unofficial Fansite.
+
+	Copyright (C) 2017 SabineWren
+	https://github.com/SabineWren
+
+	GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
+	https://www.gnu.org/licenses/agpl-3.0.html
+
+	@license-end
+*/
+
+a:focus { outline: 0; }
+a:active,a:hover { outline: 0; }
+b { font-weight: bold; }
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #7696ae;
+  display: block;
+  margin: 8px 0;
+}
+
+.tourney-header-container {
+	width: 100%;
+	min-width: 500px;
+	text-align: center;
+	position: relative;
+	z-index: 11;
+}
+.tourney-header-container h2 {
+	position: relative;
+	display: inline-block;
+	margin: auto;
+}
+.tourney-header-container .gradient-line {
+	position: relative;
+	display: block;
+	height: 3px;
+	width: 100%;
+	background: linear-gradient(
+		to right,
+		rgba(  0,  0,  0, 0.0)  0%,
+		rgba(  0,  0,  0, 0.0)  2%,
+		rgba(226, 97, 11, 0.8) 18%,
+		rgba(226, 97, 11, 0.0) 40%,
+		rgba(  0,  0,  0, 0.0) 60%,
+		rgba(226, 97, 11, 0.8) 82%,
+		rgba(  0,  0,  0, 0.0) 98%,
+		rgba(  0,  0,  0, 0.0)100%
+	);
+}
+
+/* WINGS */
+.tourney-header-container .wings_container {
+	z-index: 9;
+	position: relative;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+	top: 0px;
+	max-width: 1140px;
+	min-width: 500px;
+	width: 80%;
+	height: 25px;
+	margin: auto;
+	margin-top: -27px;
+}
+
+.tourney-header-container .wings_container .indicator-separator {
+	-webkit-box-flex: 1;
+	flex: 1;
+	display: block;
+}
+
+.tourney-header-container .wings_container .view {
+	position: relative;
+	display: block;
+	margin-top: 5px;
+	margin-right: 11px;
+	margin-left: 7px;
+}
+
+.tourney-header-container .wings_container .view {
+	background: #e58605;
+	background: rgba(229, 134, 5, 0.6);
+}
+.tourney-header-container .wings_container .view:hover {
+	background: #f0e4af;
+	opacity: 0.95;
+}
+
+.tourney-header-container .wings_container .view {
+	display: block;
+	transition-duration: 0.3s;
+}
+.tourney-header-container .wings_container .view.wing1 {
+	width: 52px;
+	height: 9px;
+}
+.tourney-header-container .wings_container .view.wing2 {
+	width: 52px;
+	height: 9px;
+}
+.tourney-header-container .wings_container .view.wing3 {
+	width: 42px;
+	height: 12px;
+}
+@media only screen and (max-width: 1000px){
+	.tourney-header-container .wings_container .view.wing2 {
+		display: none;
+	}
+}
+@media only screen and (max-width: 750px){
+	.tourney-header-container .wings_container .view.wing3 {
+		display: none;
+	}
+}
+@media only screen and (max-width: 550px){
+	.tourney-header-container .wings_container .view.wing1 {
+		display: none;
+	}
+}
+
+.tourney-header-container .wings_container .view.leftside.wing1,
+.tourney-header-container .wings_container .view.leftside.wing2 {
+	-webkit-transform: skew(55deg);
+	transform: skew(55deg);
+}
+.tourney-header-container .wings_container .view.leftside.wing3 {
+	-webkit-transform: skew(45deg);
+	transform: skew(45deg);
+}
+.tourney-header-container .wings_container .view.rightside.wing1,
+.tourney-header-container .wings_container .view.rightside.wing2 {
+	-webkit-transform: skew(-55deg);
+	transform: skew(-55deg);
+}
+.tourney-header-container .wings_container .view.rightside.wing3 {
+	-webkit-transform: skew(-45deg);
+	transform: skew(-45deg);
+}
