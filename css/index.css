@@ -41,6 +41,13 @@ a {
   cursor: pointer;
 }
 
+h2 {
+	font: 26px/26px 'Prototype';
+	color: #DCDCDC;
+	font-weight: 500;
+	margin: 10px;
+}
+
 .global-glowy {
 	color: #C6B089;
 	text-shadow: 0 0 10px rgba(255, 118, 17, 0.72), 0 0 10px rgba(255, 118, 17, 0.72);
@@ -53,15 +60,22 @@ a {
 .aotw-logo {
 	position: relative;
 	display: block;
+	width: 100%;
 	min-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 	z-index: 2;
 }
-@media only screen and (max-width: 950px){
+@media only screen and (min-width: 950px){
 	.aotw-logo {
-		width: 100%;
+		width: 950px;
 	}
+}
+
+.wide-picture {
+	width: 100%;
+	min-width: 500px;
 }
 
 .logo-background-pic {
@@ -123,7 +137,7 @@ a {
 	z-index: 1;
 }
 
-.container-videos .video .thumbnail > img {
+.container-videos .video .thumbnail > picture img {
 	display: block;
 	position: relative;
 	width: 100%;
@@ -176,12 +190,11 @@ a {
 .container-description {
 	display: block;
 	position: relative;
+	margin-bottom: 10%;
 }
 
-.container-description img {
+.container-description .wide-picture {
 	position:relative;
-	width: 100%;
-	min-width: 500px;
 	margin-bottom: -10%;
 }
 
