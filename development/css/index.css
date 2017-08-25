@@ -125,9 +125,9 @@ h2 {
 	font-family: serif;
 	font-weight: 500;
 }
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 800px){
 	.container_trophies .trophy p {
-		min-width: 100px;
+		width: 150px;
 	}
 }
 
