@@ -2,9 +2,15 @@ SERVER
 - autodeployment failed once due to the git user.email resetting on server; may need to implement a workaround
 - reduce log verbosity from auto-deployment
 
-PRODUCTION
+LONG TERM:
 - refactor button prototype
 - outsource some images to imgur
 - add more decorative HUD elements
-- animate a "Meet Us" popup
+
+PRODUCTION
+-move description header down on wide screens
+-second video picture
+-HP picture
+-ammo counter
+-animate a "Meet Us" popup to replace mumble/discord page
 

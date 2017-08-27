@@ -146,8 +146,6 @@ h2 {
 	margin: 0px;
 	width: 50%;
 	min-width: 250px;
-	/* the h3 transform scale(1.1) causes overflow */
-	overflow-x: hidden;
 }
 
 .container-videos .video .thumbnail {
@@ -189,53 +187,55 @@ h2 {
 	z-index: 12;
 }
 
-.container-videos .video .caption {
+.container-videos .video .container-caption {
 	position: absolute;
 	display: block;
-	bottom: 8%;
-	left: 50%;
-	right: 0px;
-	width: 250px;
-	min-width: 250px;
+	width: 100%;
+	right: 50%;
+	bottom: calc(10% - 10px);
 }
-.container-videos .video .caption h3 {
-	margin: 0px;
+.container-videos .video .container-caption .caption {
 	position: relative;
 	display: block;
-	left: -125px;
-	width: 250px;
-	text-align: center;
-	font-size: 22px;
-	line-height: 22px;
-	transition-duration: 0.2s;
+	width: 100%;
+	right: -50%;
+	overflow: hidden;
 }
-.thumbnail:hover ~ .caption.global-glowy h3 {
+.thumbnail:hover ~  .container-caption .caption.global-glowy h3 {
 	color: #edead7;
 	transform: scale(1.1);
 }
-
+.container-videos .video .container-caption .caption h3 {
+	position: relative;
+	display: block;
+	font-size: 22px;
+	line-height: 0px;
+	text-align: center;
+	transition-duration: 0.2s;
+}
 @media only screen and (min-width: 800px){
-	.container-videos .video .caption h3 {
+	.container-videos .video .container-caption .caption h3 {
 		font-size: 26px;
-		line-height: 26px;
-		left: -300px;
-		width: 600px;
 	}
 }
 @media only screen and (min-width: 1000px){
-	.container-videos .video .caption h3 {
+	.container-videos .video .container-caption .caption h3 {
 		font-size: 30px;
-		line-height: 30px;
-		left: -400px;
-		width: 800px;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.container-videos .video .caption h3 {
+	.container-videos .video .container-caption .caption h3 {
 		font-size: 32px;
-		line-height: 32px;
-		left: -400px;
-		width: 800px;
+	}
+}
+@media only screen and (min-width: 1400px){
+	.container-videos .video .container-caption .caption h3 {
+		font-size: 34px;
+	}
+}
+@media only screen and (min-width: 1800px){
+	.container-videos .video .container-caption .caption h3 {
+		font-size: 36px;
 	}
 }
 
