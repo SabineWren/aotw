@@ -157,6 +157,11 @@ h2 {
 	height: auto;
 	width: 80%;
 }
+.container-videos .video .thumbnail:hover {
+	box-shadow: 0px 0px 22px 0px rgba(226, 97, 11, 0.40);
+	background: rgba(226, 97, 11, 0.15);
+	transition-duration: 0.2s;
+}
 .container-videos .video .thumbnail a {
 	width: 100%;
 	height: 100%;
@@ -171,7 +176,7 @@ h2 {
 	position: relative;
 	width: 100%;
 	margin: 10px 0px;
-	z-index: -1;
+	z-index: 1;
 }
 
 .container-videos .video .thumbnail a .play-icon img {
@@ -186,12 +191,18 @@ h2 {
 	min-width: 90px;
 	z-index: 12;
 }
+.container-videos .video .thumbnail:hover a .play-icon img {
+	width: 20%;
+	min-width: 120px;
+	transition-duration: 0.1s;
+}
 
 .container-videos .video .container-caption {
 	position: absolute;
 	display: block;
 	width: 100%;
 	right: 50%;
+	z-index: 12;
 	bottom: calc(10% - 10px);
 }
 .container-videos .video .container-caption .caption {
@@ -205,6 +216,7 @@ h2 {
 	color: #edead7;
 	transform: scale(1.1);
 }
+
 .container-videos .video .container-caption .caption h3 {
 	position: relative;
 	display: block;
@@ -237,16 +249,6 @@ h2 {
 	.container-videos .video .container-caption .caption h3 {
 		font-size: 36px;
 	}
-}
-
-.container-videos .video .thumbnail:hover a .play-icon img {
-	width: 20%;
-	min-width: 120px;
-	transition-duration: 0.1s;
-}
-.container-videos .video .thumbnail:hover {
-	box-shadow: 0px 0px 18px 0px rgba(226, 97, 11, 0.35);
-	transition-duration: 0.2s;
 }
 
 /*DESCRIPTION*/
