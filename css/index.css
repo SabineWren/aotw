@@ -335,19 +335,15 @@ h2 {
 .menu-item a:hover .title {
 	color: #fdfae7;
 }
-/*
-.container-menu::before {
-	content: '';
-	position: absolute;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
+
+/* HUD */
+body .container-HUD {
+	position: fixed;
+	display: block;
 	width: 100%;
-	left: 0;
-	right: 0;
-	border-top: 3px solid rgba(202, 192, 144, 0.65);
-	top: 0;
-	box-shadow: 0   8px 28px 0     rgba(226, 97, 11, 0.51),
-		0  20px 38px 0     rgba(226, 97, 11, 0.78),
-		0  -15px  20px  0 rgba(226, 97, 11, 0.64);
+	min-width: 500px;
+	z-index: 20;
+	left: 0px;
 }
-*/
+.upper-HUD {top: 0px }
+.lower-HUD { bottom: 0px }
