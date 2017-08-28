@@ -119,6 +119,51 @@
 		}
 	]]></style>
 </defs>
+<svg viewBox="0 0 1280 720" id="HUD-upper">
+	<path class="line project" id="upper-main"
+	d="
+		M249, 0
+		L257,17
+		Q259,19 262,21
+		L388,39
+		Q396,39 401,37
+		L435,25
+		Q440,24 454,26
+		L610,42
+		Q625,42 629,36
+		Q633,33 645,33
+		Q656,33 661,35
+		Q666,41 680,41
+		L862,29
+		Q872,29 879,31
+		L906,43
+		Q910,44 914,44
+		L944,41
+		Q950,40 952,37
+		Q960,27 969, 0
+	"/>
+	
+	<path class="line reflect-top" id="upper-main-shadow"
+	d="
+		M258,17
+		L402,37
+		M900,41
+		L952,37
+	"/>
+</svg>
+<svg id="HUD-right">
+	<path class="line project"
+	d="
+		M385,543
+		L397,527
+		L467,528
+		L477,507
+		
+		M429,573
+		L448,573
+		L435,593
+	"/>
+</svg>
 <svg viewBox="0 0 1280 720" id="HUD-lower">
 	<polyline class="line project" id="lower-left-main"
 	points="
@@ -191,38 +236,6 @@
 		L151,665
 		M146,658
 		L143,670
-	"/>
-</svg>
-<svg viewBox="0 0 1280 720" id="HUD-upper">
-	<path class="line project" id="upper-main"
-	d="
-		M249, 0
-		L257,17
-		Q259,19 262,21
-		L388,39
-		Q396,39 401,37
-		L435,25
-		Q440,24 454,26
-		L610,42
-		Q625,42 629,36
-		Q633,33 645,33
-		Q656,33 661,35
-		Q666,41 680,41
-		L862,29
-		Q872,29 879,31
-		L906,43
-		Q910,44 914,44
-		L944,41
-		Q950,40 952,37
-		Q960,27 969, 0
-	"/>
-	
-	<path class="line reflect-top" id="upper-main-shadow"
-	d="
-		M258,17
-		L402,37
-		M900,41
-		L952,37
 	"/>
 </svg>
 </svg>

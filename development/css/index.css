@@ -58,8 +58,8 @@ h2 {
 .global-glowy {
 	color: #C6B089;
 	text-shadow: 0px 0px  4px rgba(0, 0, 0, 1.0),
-	             0px 0px 10px rgba(255, 118, 17, 0.72),
-	             0px 0px 10px rgba(255, 118, 17, 0.72);
+	             0px 0px 10px rgba(255, 118, 17, 1.0),
+	             0px 0px  1px rgba(0, 0, 0, 1.0);
 	font-weight: bold;
 	font-family: 'Prototype';
 	letter-spacing: 2px;
@@ -260,27 +260,31 @@ h2 {
 
 .container-description .wide-picture {
 	position:relative;
+	margin-top: -10%;
 	margin-bottom: -10%;
+	z-index: -1;
 }
 
 .container-description .description-header {
-	position: absolute;
+	display: block;
+	position: relative;
 	min-width: 500px;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
 	text-align: center;
+	margin-bottom: 20px;
+	text-shadow: 0px 0px 4px rgba(226, 97, 11, 0.5),
+	             0px 0px 2px rgba(0, 0, 0, 1.0);
 }
 
 .container-description p {
 	display: block;
 	position: relative;
 	width: 60%;
-	min-width: 500px;
+	min-width: 400px;
 	margin: auto;
 	text-align: center;
 	font-size: 17px;
+	text-shadow: 0px 0px 3px rgba(226, 97, 11, 0.5),
+	             0px 0px 1px rgba(0, 0, 0, 1.0);
 }
 @media only screen and (min-width: 500px){
 	.container-description p {
@@ -310,17 +314,8 @@ h2 {
 	height: 100%;
 	width: 100%;
 }
-/* height of element = line-height + padding; add arbitrary spacing*/
 #media {
-	bottom: calc(10vw + 26px + 10px + 10px);
-	left: 10px;
-}
-#rsi {
-	bottom: calc(10vw + 52px + 20px + 20px);
-	left: 10px;
-}
-#org-finder {
-	bottom: 10vw;
+	bottom: calc(10vw + 5px);
 	left: 10px;
 }
 .menu-item a .title {
@@ -328,10 +323,6 @@ h2 {
 	letter-spacing: 4px;
 	font-size: 26px;
 	line-height: 26px;
-	padding: 5px 10px;
-	border: solid 2px rgba(255, 145, 11, 0.2);
-	box-shadow: 0 0px 10px rgba(226, 145, 11, 0.4);
-	border-radius: 12px;
 }
 .menu-item a:hover .title {
 	color: #fdfae7;
@@ -341,10 +332,47 @@ h2 {
 body .container-HUD {
 	position: fixed;
 	display: block;
-	width: 100%;
 	min-width: 500px;
 	z-index: 20;
+}
+.container-HUD.upper-HUD {
+	width: 100%;
+	top: 0px;
 	left: 0px;
 }
-.upper-HUD {top: 0px }
-.lower-HUD { bottom: 0px }
+#org-finder {
+	width: 100%;
+	text-align: center;
+	top: -5px;
+}
+.menu-item a * {
+	margin: 0px;
+	padding: 20px;
+}
+.container-HUD.right-HUD {
+	width: 1280px;
+	height: 720px;
+	right: -810px;
+	bottom: 7vw;
+	transform: scale(1.2);
+}
+#rsi {
+	bottom: calc(7vw + 148px);
+	right: 22px;
+	font-family: sans-serif;
+}
+h1.right-HUD {
+	position: fixed;
+	color: rgba(226, 145, 11, 1.0);
+	bottom: calc(7vw + 90px);
+	right: 70px;
+	font-weight: 500;
+	font-family: sans-serif;
+	text-shadow: 0px 0px  4px rgba(0, 0, 0, 1.0),
+	             0px 0px 12px rgba(255, 118, 17, 0.9);
+}
+.container-HUD.lower-HUD {
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+}

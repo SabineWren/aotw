@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-	xmlns="http://www.w3.org/2000/svg"
-	viewBox="0 0 1280 720"
-	id="svg2"
->
+<svg viewBox="0 0 1280 720"
+xmlns="http://www.w3.org/2000/svg">
 <metadata>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:schema="http://schema.org/">
 	<schema:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.html"/>
@@ -57,7 +54,7 @@
 		values="0.5 0 0 0 0 0 0.5 0 0 0 0 0 0.5 0 0 0 0 0 1 0" />
 	</filter>
 
-	<filter id="f-dropshadow3">
+	<filter id="slight-blur">
 		<feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blurred"/>
 	
 		<feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blurred1"/>
@@ -87,17 +84,25 @@
 			fill:none;
 			stroke:rgba(255, 165, 11, 0.5);
 		}
-		#HUD-lower,
-		#HUD-upper {
+		#HUD-upper,
+		#HUD-right,
+		#HUD-lower {
 			display: none;
 		}
-		#HUD-lower:target,
-		#HUD-upper:target {
+		#HUD-upper:target,
+		#HUD-right:target,
+		#HUD-lower:target {
 			display: inline;
 		}
 		.line.project {
 			stroke-width:3;
 			filter: url("#project-glow");
+		}
+		.box {
+			stroke:rgba(255, 165, 11, 0.5);
+			fill: rgba(255, 165, 11, 0.5);
+			stroke-width:3;
+			filter: url("#slight-blur")
 		}
 		.line.reflect {
 			z-index: 40;
@@ -111,7 +116,7 @@
 		}
 		.line.detail {
 			stroke-width:3;
-			filter: url("#f-dropshadow3");
+			filter: url("#slight-blur");
 		}
 		.line.bright-detail {
 			stroke-width:4;
@@ -119,7 +124,67 @@
 		}
 	]]></style>
 </defs>
-<svg viewBox="0 0 1280 720" id="HUD-lower">
+<svg id="HUD-upper">
+	<path class="line project" id="upper-main"
+	d="
+		M249, 0
+		L257,17
+		Q259,19 262,21
+		L388,39
+		Q396,39 401,37
+		L435,25
+		Q440,24 454,26
+		L610,42
+		Q625,42 629,36
+		Q633,33 645,33
+		Q656,33 661,35
+		Q666,41 680,41
+		L862,29
+		Q872,29 879,31
+		L906,43
+		Q910,44 914,44
+		L944,41
+		Q950,40 952,37
+		Q960,27 969, 0
+	"/>
+	
+	<path class="line reflect-top" id="upper-main-shadow"
+	d="
+		M258,17
+		L402,37
+		M900,41
+		L952,37
+	"/>
+</svg>
+<svg id="HUD-right">
+	<path class="line project"
+	d="
+		M385,543
+		L389.8,536.6
+		Q395.0,527.0 402.0,527.2
+		L455.0,527.8
+		Q467.0,528.0 472.2,517.2
+		L475,505
+		
+		M429,573
+		L438.0,573.0
+		Q451.0,572.0 442.5,582
+		L435,593
+	"/>
+	<rect x="448" y="540" width="4" height="4" class="box"/>
+	<rect x="454" y="540" width="4" height="4" class="box"/>
+	<rect x="460" y="540" width="4" height="4" class="box"/>
+	<rect x="448" y="546" width="4" height="4" class="box"/>
+	<rect x="454" y="546" width="4" height="4" class="box"/>
+	<rect x="460" y="546" width="4" height="4" class="box"/>
+	<rect x="448" y="552" width="4" height="4" class="box"/>
+	<rect x="454" y="552" width="4" height="4" class="box"/>
+	<rect x="460" y="552" width="4" height="4" class="box"/>
+	<rect x="448" y="558" width="4" height="4" class="box"/>
+	<rect x="454" y="558" width="4" height="4" class="box"/>
+	<rect x="460" y="558" width="4" height="4" class="box"/>
+</svg>
+<svg id="HUD-lower">
 	<path class="line project" id="lower-main"
 	d="
 		M0,620
@@ -205,38 +270,6 @@
 		L151,665
 		M146,658
 		L143,670
-	"/>
-</svg>
-<svg viewBox="0 0 1280 720" id="HUD-upper">
-	<path class="line project" id="upper-main"
-	d="
-		M249, 0
-		L257,17
-		Q259,19 262,21
-		L388,39
-		Q396,39 401,37
-		L435,25
-		Q440,24 454,26
-		L610,42
-		Q625,42 629,36
-		Q633,33 645,33
-		Q656,33 661,35
-		Q666,41 680,41
-		L862,29
-		Q872,29 879,31
-		L906,43
-		Q910,44 914,44
-		L944,41
-		Q950,40 952,37
-		Q960,27 969, 0
-	"/>
-	
-	<path class="line reflect-top" id="upper-main-shadow"
-	d="
-		M258,17
-		L402,37
-		M900,41
-		L952,37
 	"/>
 </svg>
 </svg>
