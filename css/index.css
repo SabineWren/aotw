@@ -262,7 +262,7 @@ h2 {
 .container-description .wide-picture {
 	position:relative;
 	margin-top: -10%;
-	margin-bottom: -10%;
+	margin-bottom: -15%;
 	z-index: -1;
 }
 
@@ -315,10 +315,6 @@ h2 {
 	height: 100%;
 	width: 100%;
 }
-#media {
-	bottom: calc(10vw + 5px);
-	left: 10px;
-}
 .menu-item a .title {
 	font-weight: 700;
 	letter-spacing: 4px;
@@ -341,14 +337,9 @@ body .container-HUD {
 	top: 0px;
 	left: 0px;
 }
-#org-finder {
-	width: 100%;
-	text-align: center;
-	top: -5px;
-}
 .menu-item a * {
-	margin: 0px;
-	padding: 20px;
+	margin: 10px;
+	padding: 10px;
 }
 .container-HUD.right-HUD {
 	width: 1280px;
@@ -358,10 +349,22 @@ body .container-HUD {
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
-#rsi {
+#media {
 	bottom: calc(7vw + 148px);
 	right: 22px;
 	font-family: sans-serif;
+}
+#rsi {
+	bottom: calc(7vw + 188px);
+	right: 0px;
+	font-family: sans-serif;
+}
+#org-finder {
+	bottom: calc(9vw + 60px);
+	left: 20px;
+	font-family: sans-serif;
+	-webkit-transform: rotate(8deg);
+	transform: rotate(8deg);
 }
 h1.right-HUD {
 	position: fixed;
@@ -372,9 +375,18 @@ h1.right-HUD {
 	font-family: sans-serif;
 	text-shadow: 0px 0px  4px rgba(0, 0, 0, 1.0),
 	             0px 0px 12px rgba(255, 118, 17, 0.9);
+	z-index: 30;
 }
 .container-HUD.lower-HUD {
 	width: 100%;
 	bottom: 0px;
 	left: 0px;
+}
+.container-HUD.left-HUD {
+	width: 1280px;
+	height: 720px;
+	bottom: 9vw;
+	left: calc(60px + 2vw);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
