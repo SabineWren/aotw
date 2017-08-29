@@ -121,9 +121,10 @@ h2 {
 	display: inline-block;
 	min-width: 50%;
 	line-height: 0px;
-	font-size:   14px;
-	font-family: serif;
-	font-weight: 500;
+	font-size:   15px;
+	font-family: 'Prototype';
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 @media only screen and (max-width: 800px){
 	.container_trophies .trophy p {
