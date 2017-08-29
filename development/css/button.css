@@ -8,196 +8,187 @@ body .container-HUD-button {
 	z-index: 100;
 }
 
-.HUD-button {
-  width: 332px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  top: 0px;
-}
-
-.HUD-button .label {
-  width: 320px;
-  z-index: 15;
-  display: block;
-  position: absolute;
-  left: 50%;
-  height: 61px;
-  transform: translateX(-50%);
-  text-align: center;
-  top: 21px;
-  text-shadow: 0 0 13px rgba(76, 33, 4, 0.79), 0 0 32px rgba(255, 187, 24, 0.6);
-  transition-duration: 0.3s;
-  perspective: 1000px;
+.label {
+	width: 320px;
+	height: 61px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	text-shadow: 0 0 13px rgba(76, 33, 4, 0.79), 0 0 32px rgba(255, 187, 24, 0.6);
+	z-index: 15;
+	transition-duration: 0.3s;
+	top: 21px;
 }
 
 /* line animations */
-.HUD-button .label:hover .line-wrapper .line.top {
+.label:hover .line-wrapper .line.top {
   width: 238px;
   border-bottom-color: #200e00;
 }
-.HUD-button .label:hover .line-wrapper .line.top::after {
+.label:hover .line-wrapper .line.top::after {
   width: 256px;
 }
-.HUD-button .label:hover .line-wrapper .line.bottom {
+.label:hover .line-wrapper .line.bottom {
   width: 198px;
   border-top-color: #200e00;
 }
-.HUD-button .label:hover .line-wrapper .line.bottom::before {
+.label:hover .line-wrapper .line.bottom::before {
   width: 224px;
 }
 
 /* gradient animations */
-.HUD-button .label:hover .chevron-wrapper .chevron.small.left {
+.label:hover .chevron-wrapper .chevron.small.left {
   right: 32px;
   box-shadow: -12px -5px 25px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
 }
-.HUD-button .label:hover .chevron-wrapper .chevron.small.left::before {
+.label:hover .chevron-wrapper .chevron.small.left::before {
   box-shadow: -38px 3px 34px 3px rgba(251, 169, 40, 0.8);
 }
-.HUD-button .label:hover .chevron-wrapper .chevron.small.left::after {
+.label:hover .chevron-wrapper .chevron.small.left::after {
   box-shadow: -72px 1px 46px 2px rgba(204, 91, 7, 0.8);
 }
-.HUD-button .label:hover .chevron-wrapper .chevron.small.right {
+.label:hover .chevron-wrapper .chevron.small.right {
   left: 32px;
   box-shadow: 12px -5px 25px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
 }
-.HUD-button .label:hover .chevron-wrapper .chevron.small.right::before {
+.label:hover .chevron-wrapper .chevron.small.right::before {
   box-shadow: 38px 3px 34px 3px rgba(251, 169, 40, 0.8);
 }
-.HUD-button .label:hover .chevron-wrapper .chevron.small.right::after {
+.label:hover .chevron-wrapper .chevron.small.right::after {
   box-shadow: 72px 1px 46px 2px rgba(204, 91, 7, 0.8);
 }
-.HUD-button .label:hover .chevron-wrapper .chevron.fat.left {
+.label:hover .chevron-wrapper .chevron.fat.left {
   left: 43px;
   box-shadow: 12px 5px 25px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
 }
-.HUD-button .label:hover .chevron-wrapper .chevron.fat.right {
+.label:hover .chevron-wrapper .chevron.fat.right {
   right: 43px;
   box-shadow: -12px 5px 25px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
 }
-.HUD-button .label:hover .line-wrapper {
+.label:hover .line-wrapper {
   filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.66));
 }
-.HUD-button .label:hover .line-wrapper::before {
+.label:hover .line-wrapper::before {
   box-shadow: -54px -1px 45px 5px rgba(251, 169, 40, 0.8);
 }
-.HUD-button .label:hover .line-wrapper::after {
+.label:hover .line-wrapper::after {
   box-shadow: 54px -1px 45px 5px rgba(251, 169, 40, 0.8);
 }
-.HUD-button .label:hover .line-wrapper .line.top::before {
+.label:hover .line-wrapper .line.top::before {
   background: #fffef1;
   background: linear-gradient(to right, #fffef1 0%, rgba(224, 132, 0, 0.68) 25%, rgba(201, 77, 0, 0.48) 40%, rgba(201, 77, 0, 0.35) 50%, rgba(201, 77, 0, 0.48) 60%, rgba(224, 132, 0, 0.68) 75%, #fffef1 100%);
 }
-.HUD-button .label:hover .line-wrapper .line.bottom::after {
+.label:hover .line-wrapper .line.bottom::after {
   background: #fefaeb;
   background: linear-gradient(to right, #fefaeb 0%, rgba(224, 132, 0, 0.55) 30%, rgba(207, 77, 13, 0.4) 40%, rgba(207, 77, 13, 0.25) 50%, rgba(207, 77, 13, 0.4) 60%, rgba(224, 132, 0, 0.55) 70%, #fefaeb 100%);
 }
 
 /* perspective animations */
-.HUD-button .label:hover .chevron-wrapper .chevron {
+.label:hover .chevron-wrapper .chevron {
   transition-duration: 0.2s;
   perspective: 1000px;
   transition-delay: 0s;
   background: #fffcd8;
 }
-.HUD-button .label:hover .line-wrapper .line {
+.label:hover .line-wrapper .line {
   transition-duration: 0.2s;
   perspective: 1000px;
   transition-delay: 0s;
   opacity: 0.9;
 }
-.HUD-button .label:hover .line-wrapper .line::before,
-.HUD-button .label:hover .line-wrapper .line::after {
+.label:hover .line-wrapper .line::before,
+.label:hover .line-wrapper .line::after {
   transition-duration: 0.2s;
   perspective: 1000px;
   transition-delay: 0s;
 }
 
-.HUD-button .label:active {
+.label:active {
   font-size: 25px;
 }
 
-.HUD-button .label:active .chevron-wrapper .chevron {
+.label:active .chevron-wrapper .chevron {
   transition-delay: 0s;
   background: #fffef1;
 }
 
-.HUD-button .label:active .chevron-wrapper .chevron.small.left {
+.label:active .chevron-wrapper .chevron.small.left {
   right: 42px;
   box-shadow: -13px -5px 32px 5px rgba(226, 97, 11, 0.9), 0px 0px 13px rgba(226, 97, 11, 0.9);
 }
 
-.HUD-button .label:active .chevron-wrapper .chevron.small.left::before {
+.label:active .chevron-wrapper .chevron.small.left::before {
   box-shadow: -38px 3px 34px 3px rgba(251, 169, 40, 0.75);
 }
 
-.HUD-button .label:active .chevron-wrapper .chevron.small.left::after {
+.label:active .chevron-wrapper .chevron.small.left::after {
   box-shadow: -72px 1px 46px 2px rgba(204, 91, 7, 0.75);
 }
 
-.HUD-button .label:active .chevron-wrapper .chevron.small.right {
+.label:active .chevron-wrapper .chevron.small.right {
   left: 42px;
   box-shadow: 13px -5px 32px 5px rgba(226, 97, 11, 0.9), 0px 0px 13px rgba(226, 97, 11, 0.9);
 }
 
-.HUD-button .label:active .chevron-wrapper .chevron.small.right::before {
+.label:active .chevron-wrapper .chevron.small.right::before {
   box-shadow: 38px 3px 34px 3px rgba(251, 169, 40, 0.75);
 }
 
-.HUD-button .label:active .chevron-wrapper .chevron.small.right::after {
+.label:active .chevron-wrapper .chevron.small.right::after {
   box-shadow: 72px 1px 46px 2px rgba(204, 91, 7, 0.75);
 }
 
-.HUD-button .label:active .chevron-wrapper .chevron.fat.left {
+.label:active .chevron-wrapper .chevron.fat.left {
   left: 53px;
   box-shadow: 13px 5px 32px 5px rgba(226, 97, 11, 0.9), 0px 0px 13px rgba(226, 97, 11, 0.9);
 }
 
-.HUD-button .label:active .chevron-wrapper .chevron.fat.right {
+.label:active .chevron-wrapper .chevron.fat.right {
   right: 53px;
   box-shadow: -13px 5px 32px 5px rgba(226, 97, 11, 0.9), 0px 0px 13px rgba(226, 97, 11, 0.9);
 }
 
-.HUD-button .label:active .line-wrapper {
+.label:active .line-wrapper {
   filter: drop-shadow(0 2px 12px rgba(205, 101, 0, 0.56));
 }
 
-.HUD-button .label:active .line-wrapper::before {
+.label:active .line-wrapper::before {
   box-shadow: -50px 1px 77px 1px rgba(251, 169, 40, 0.75);
 }
 
-.HUD-button .label:active .line-wrapper::after {
+.label:active .line-wrapper::after {
   box-shadow: 50px 1px 77px 1px rgba(251, 169, 40, 0.75);
 }
 
-.HUD-button .label:active .line-wrapper .line {
+.label:active .line-wrapper .line {
   transition-delay: 0s;
   opacity: 1;
 }
 
-.HUD-button .label:active .line-wrapper .line.top {
+.label:active .line-wrapper .line.top {
   width: 218px;
   border-bottom-color: #200e00;
 }
 
-.HUD-button .label:active .line-wrapper .line.bottom {
+.label:active .line-wrapper .line.bottom {
   width: 178px;
   border-top-color: #200e00;
 }
 
-.HUD-button .label:active .line-wrapper .line.bottom::before {
+.label:active .line-wrapper .line.bottom::before {
   width: 204px;
 }
 
 /* button static */
-.HUD-button .label .inner {
-  position: relative;
-  z-index: 20;
+.label .inner {
+	position: relative;
+	z-index: 20;
+	user-select: none;
+	cursor: pointer;
 }
 
-.HUD-button .label .chevron-wrapper {
+.label .chevron-wrapper {
   position: absolute;
   z-index: 14;
   transform: translateZ(0);
@@ -207,14 +198,14 @@ body .container-HUD-button {
   bottom: 0;
 }
 
-.HUD-button .label .chevron-wrapper .chevron {
+.label .chevron-wrapper .chevron {
   position: absolute;
   background: #e2d691;
   z-index: 15;
 }
 
-.HUD-button .label .chevron-wrapper .chevron::before,
-.HUD-button .label .chevron-wrapper .chevron::after {
+.label .chevron-wrapper .chevron::before,
+.label .chevron-wrapper .chevron::after {
   content: '';
   position: absolute;
   display: block;
@@ -223,63 +214,63 @@ body .container-HUD-button {
   opacity: 0.5;
 }
 
-.HUD-button .label .chevron-wrapper .chevron.left {
+.label .chevron-wrapper .chevron.left {
   transform: translateZ(0) skew(45deg, 0deg);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.right {
+.label .chevron-wrapper .chevron.right {
   transform: translateZ(0) skew(-45deg, 0deg);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small {
+.label .chevron-wrapper .chevron.small {
   top: 1px;
   height: 12px;
   transition-duration: 0.2s;
   perspective: 1000px;
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small::before,
-.HUD-button .label .chevron-wrapper .chevron.small::after {
+.label .chevron-wrapper .chevron.small::before,
+.label .chevron-wrapper .chevron.small::after {
   height: 10px;
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small.left {
+.label .chevron-wrapper .chevron.small.left {
   right: 0;
   box-shadow: -9px 0px 26px 2px #e2610b, 0px 0px 10px rgba(226, 97, 11, 0.5);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small.left::before,
-.HUD-button .label .chevron-wrapper .chevron.small.left::after {
+.label .chevron-wrapper .chevron.small.left::before,
+.label .chevron-wrapper .chevron.small.left::after {
   right: -17px;
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small.left::before {
+.label .chevron-wrapper .chevron.small.left::before {
   box-shadow: -38px 3px 34px 3px rgba(251, 169, 40, 0.66);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small.left::after {
+.label .chevron-wrapper .chevron.small.left::after {
   box-shadow: -72px 1px 46px 2px rgba(204, 91, 7, 0.66);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small.right {
+.label .chevron-wrapper .chevron.small.right {
   left: 0;
   box-shadow: 9px 0px 26px 2px #e2610b, 0px 0px 10px rgba(226, 97, 11, 0.5);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small.right::before,
-.HUD-button .label .chevron-wrapper .chevron.small.right::after {
+.label .chevron-wrapper .chevron.small.right::before,
+.label .chevron-wrapper .chevron.small.right::after {
   left: -17px;
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small.right::before {
+.label .chevron-wrapper .chevron.small.right::before {
   box-shadow: 38px 3px 34px 3px rgba(251, 169, 40, 0.66);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.small.right::after {
+.label .chevron-wrapper .chevron.small.right::after {
   box-shadow: 72px 1px 46px 2px rgba(204, 91, 7, 0.66);
 }
 
-.HUD-button .label .chevron-wrapper
+.label .chevron-wrapper
 .chevron.fat {
   top: 13px;
   height: 36px;
@@ -288,48 +279,48 @@ body .container-HUD-button {
   transition-delay: 0s;
 }
 
-.HUD-button .label .chevron-wrapper .chevron.fat::before,
-.HUD-button .label .chevron-wrapper .chevron.fat::after {
+.label .chevron-wrapper .chevron.fat::before,
+.label .chevron-wrapper .chevron.fat::after {
   height: 22px;
 }
 
-.HUD-button .label .chevron-wrapper .chevron.fat.left {
+.label .chevron-wrapper .chevron.fat.left {
   left: 46px;
   box-shadow: 9px 0px 26px 2px #e2610b, 0px 0px 10px rgba(226, 97, 11, 0.5);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.fat.left::before,
-.HUD-button .label .chevron-wrapper .chevron.fat.left::after {
+.label .chevron-wrapper .chevron.fat.left::before,
+.label .chevron-wrapper .chevron.fat.left::after {
   left: -17px;
 }
 
-.HUD-button .label .chevron-wrapper .chevron.fat.left::before {
+.label .chevron-wrapper .chevron.fat.left::before {
   box-shadow: 42px 9px 44px 5px rgba(251, 169, 40, 0.66);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.fat.left::after {
+.label .chevron-wrapper .chevron.fat.left::after {
   box-shadow: 79px 2px 36px 0px rgba(204, 91, 7, 0.66);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.fat.right {
+.label .chevron-wrapper .chevron.fat.right {
   right: 46px;
   box-shadow: -9px 0px 26px 2px #e2610b, 0px 0px 10px rgba(226, 97, 11, 0.5);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.fat.right::before,
-.HUD-button .label .chevron-wrapper .chevron.fat.right::after {
+.label .chevron-wrapper .chevron.fat.right::before,
+.label .chevron-wrapper .chevron.fat.right::after {
   right: -17px;
 }
 
-.HUD-button .label .chevron-wrapper .chevron.fat.right::before {
+.label .chevron-wrapper .chevron.fat.right::before {
   box-shadow: -42px 9px 44px 5px rgba(251, 169, 40, 0.66);
 }
 
-.HUD-button .label .chevron-wrapper .chevron.fat.right::after {
+.label .chevron-wrapper .chevron.fat.right::after {
   box-shadow: -79px 2px 36px 0px rgba(204, 91, 7, 0.66);
 }
 
-.HUD-button .label .line-wrapper {
+.label .line-wrapper {
   position: absolute;
   z-index: 13;
   top: 1px;
@@ -338,8 +329,8 @@ body .container-HUD-button {
   filter: drop-shadow(0 2px 3px rgba(205, 101, 0, 0.25));
 }
 
-.HUD-button .label .line-wrapper::before,
-.HUD-button .label .line-wrapper::after {
+.label .line-wrapper::before,
+.label .line-wrapper::after {
   content: '';
   position: absolute;
   opacity: 0.5;
@@ -352,27 +343,27 @@ body .container-HUD-button {
   perspective: 1000px;
 }
 
-.HUD-button .label .line-wrapper::before {
+.label .line-wrapper::before {
   box-shadow: -48px 3px 37px 1px rgba(251, 169, 40, 0.66);
   left: 60px;
   transform: skew(45deg);
 }
 
-.HUD-button .label .line-wrapper::after {
+.label .line-wrapper::after {
   box-shadow: 48px 3px 37px 1px rgba(251, 169, 40, 0.66);
   right: 60px;
   transform: skew(-45deg);
 }
 
-.HUD-button .label .line-wrapper .line {
+.label .line-wrapper .line {
   position: relative;
   margin: auto;
   height: 0;
   opacity: 0.66;
 }
 
-.HUD-button .label .line-wrapper .line::before,
-.HUD-button .label .line-wrapper .line::after {
+.label .line-wrapper .line::before,
+.label .line-wrapper .line::after {
   content: '';
   position: absolute;
   top: 0;
@@ -382,7 +373,7 @@ body .container-HUD-button {
   transform: translateX(-50%);
 }
 
-.HUD-button .label .line-wrapper .line.top {
+.label .line-wrapper .line.top {
   width: 300px;
   transition-duration: 0.2s;
   perspective: 1000px;
@@ -391,18 +382,18 @@ body .container-HUD-button {
   border-right: 12px solid transparent;
 }
 
-.HUD-button .label .line-wrapper .line.top::before,
-.HUD-button .label .line-wrapper .line.top::after {
+.label .line-wrapper .line.top::before,
+.label .line-wrapper .line.top::after {
   transition-duration: 0.2s;
   perspective: 1000px;
 }
 
-.HUD-button .label .line-wrapper .line.top::before {
+.label .line-wrapper .line.top::before {
   background: #e08400;
   background: linear-gradient(to right, #e08400 0%, #c94d00 15%, #5c2702 30%, #1b0f00 50%, #5c2702 70%, #c94d00 85%, #e08400 100%);
 }
 
-.HUD-button .label .line-wrapper .line.top::after {
+.label .line-wrapper .line.top::after {
   width: 320px;
   top: 12px;
   background: #e08400;
@@ -411,7 +402,7 @@ body .container-HUD-button {
   );
 }
 
-.HUD-button .label .line-wrapper .line.bottom {
+.label .line-wrapper .line.bottom {
   border-top: 34px solid #060505;
   border-left: 34px solid transparent;
   border-right: 34px solid transparent;
@@ -422,14 +413,14 @@ body .container-HUD-button {
   transition-delay: 0s;
 }
 
-.HUD-button .label .line-wrapper .line.bottom::before,
-.HUD-button .label .line-wrapper .line.bottom::after {
+.label .line-wrapper .line.bottom::before,
+.label .line-wrapper .line.bottom::after {
   transition-duration: 0.2s;
   perspective: 1000px;
   transition-delay: 0s;
 }
 
-.HUD-button .label .line-wrapper .line.bottom::before {
+.label .line-wrapper .line.bottom::before {
   top: -11px;
   width: 200px;
   left: 50%;
@@ -438,7 +429,7 @@ body .container-HUD-button {
   background: linear-gradient(to right, #e08400 0%, rgba(201, 77, 0, 0.86) 10%, rgba(59, 25, 1, 0.72) 20%, rgba(17, 10, 2, 0.3) 50%, rgba(59, 25, 1, 0.72) 80%, rgba(201, 77, 0, 0.86) 90%, #e08400 100%);
 }
 
-.HUD-button .label .line-wrapper .line.bottom::after {
+.label .line-wrapper .line.bottom::after {
   bottom: 0;
   background: #e08400;
   background: linear-gradient(to right, #e08400 0%, rgba(207, 77, 13, 0.66) 20%, rgba(89, 40, 6, 0.15) 50%, rgba(207, 77, 13, 0.66) 80%, #e08400 100%);

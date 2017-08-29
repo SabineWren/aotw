@@ -17,7 +17,12 @@ gulp.task('pages', function () {
 	.pipe(gulp.dest('./pages/'));
 });
 
-gulp.task('make', ['css', 'pages'], function () {
+gulp.task('js', function () {
+	return gulp.src('./development/js/*')
+	.pipe(gulp.dest('./js/'));
+});
+
+gulp.task('make', ['css', 'pages', 'js'], function () {
 	return gulp.src('./development/index.html')
 	.pipe(gulp.dest('./'));
 });
