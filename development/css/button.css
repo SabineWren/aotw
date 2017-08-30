@@ -19,6 +19,7 @@ body .container-HUD-button {
 	z-index: 15;
 	transition-duration: 0.3s;
 	top: 21px;
+	cursor: pointer;
 }
 
 /* line animations */
@@ -185,7 +186,6 @@ body .container-HUD-button {
 	position: relative;
 	z-index: 20;
 	user-select: none;
-	cursor: pointer;
 }
 
 .label .chevron-wrapper {

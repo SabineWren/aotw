@@ -308,48 +308,20 @@ a {
 	display: block;
 	position: fixed;
 	z-index: 100;
+	cursor: pointer;
 }
-.menu-item a {
-	position: relative;
-	display: block;
-	height: 100%;
-	width: 100%;
-}
-.menu-item a .title {
+.menu-item .title {
 	font-weight: 700;
 	letter-spacing: 4px;
 	font-size: 26px;
 	line-height: 26px;
-}
-.menu-item a:hover .title {
-	color: #fdfae7;
-}
-
-/* HUD */
-body .container-HUD {
-	position: fixed;
-	display: block;
-	min-width: 500px;
-	z-index: 20;
-}
-.container-HUD.upper-HUD {
-	width: 100%;
-	top: 0px;
-	left: 0px;
-}
-.menu-item a * {
 	margin: 10px;
 	padding: 10px;
 }
-.container-HUD.right-HUD {
-	width: 1280px;
-	height: 720px;
-	right: -810px;
-	bottom: 7vw;
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
+.menu-item:hover .title {
+	color: #fdfae7;
 }
-#media {
+#media-button {
 	bottom: calc(7vw + 148px);
 	right: 22px;
 	font-family: sans-serif;
@@ -365,6 +337,27 @@ body .container-HUD {
 	font-family: sans-serif;
 	-webkit-transform: rotate(8deg);
 	transform: rotate(8deg);
+}
+
+/* HUD */
+body .container-HUD {
+	position: fixed;
+	display: block;
+	min-width: 500px;
+	z-index: 20;
+}
+.container-HUD.upper-HUD {
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+.container-HUD.right-HUD {
+	width: 1280px;
+	height: 720px;
+	right: -810px;
+	bottom: 7vw;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 h1.right-HUD {
 	position: fixed;

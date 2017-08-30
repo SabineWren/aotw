@@ -12,17 +12,12 @@ gulp.task('css', function () {
 	.pipe(gulp.dest('./css'));
 });
 
-gulp.task('pages', function () {
-	return gulp.src('./development/pages/*')
-	.pipe(gulp.dest('./pages/'));
-});
-
 gulp.task('js', function () {
 	return gulp.src('./development/js/*')
 	.pipe(gulp.dest('./js/'));
 });
 
-gulp.task('make', ['css', 'pages', 'js'], function () {
+gulp.task('make', ['css', 'js'], function () {
 	return gulp.src('./development/index.html')
 	.pipe(gulp.dest('./'));
 });
