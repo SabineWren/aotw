@@ -342,11 +342,18 @@ a {
 	font-family: sans-serif;
 }
 #org-finder {
-	bottom: calc( var(--left-hud-height) + 63px );
+	bottom: calc( var(--left-hud-height) + 100px );
 	left: 20px;
 	font-family: sans-serif;
-	-webkit-transform: rotate(8deg);
-	transform: rotate(8deg);
+	-webkit-transform: rotate(9deg);
+	transform: rotate(9deg);
+}
+#sc-database {
+	bottom: calc( var(--left-hud-height) + 62px );
+	left: 0px;
+	font-family: sans-serif;
+	-webkit-transform: rotate(9deg);
+	transform: rotate(9deg);
 }
 
 /* HUD */
