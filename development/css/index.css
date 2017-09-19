@@ -14,6 +14,11 @@
 :root {
 	--right-hud-height: calc(10vw - 100px);
 	--left-hud-height:  calc(9vw - 15px);
+	--orange-normal: #C6B089;
+	--orange-static: rgba(229, 138, 5, 1.0);
+	--orange-highlight: #fdfae7;
+	--orange-glow-normal: rgba(255, 118, 17, 1.0);
+	--text-backdrop-shadow: rgba(0, 0, 0, 1.0);
 }
 
 body {
@@ -54,10 +59,10 @@ a {
 }
 
 .global-glowy {
-	color: #C6B089;
-	text-shadow: 0px 0px  4px rgba(0, 0, 0, 1.0),
-	             0px 0px 10px rgba(255, 118, 17, 1.0),
-	             0px 0px  1px rgba(0, 0, 0, 1.0);
+	color: var(--orange-normal);
+	text-shadow: 1px 0px  4px var(--text-backdrop-shadow),
+	             0px 0px 6px var(--orange-glow-normal),
+	             0px 0px  1px var(--text-backdrop-shadow);
 	font-weight: bold;
 	font-family: 'Prototype';
 	letter-spacing: 2px;
@@ -261,25 +266,23 @@ a {
 	margin-bottom: 10%;
 }
 
-.container-description .description-header {
-	display: block;
-	position: relative;
-	min-width: 500px;
-	text-align: center;
-	margin-bottom: 20px;
-	font-family: 'Prototype';
-	text-shadow: 0px 0px 4px rgba(226, 97, 11, 0.5),
-	             0px 0px 2px rgba(0, 0, 0, 1.0);
-}
-
 .container-description .wide-picture {
 	position:relative;
-	margin-top: -15%;
+	margin-top: -18%;
 	margin-bottom: -14%;
 	z-index: -1;
 }
 
+
+.container-description h2 {
+	margin-bottom: 15px;
+}
 .container-description p {
+	font-size: 17px;
+}
+
+.container-description p,
+h2.header-static {
 	display: block;
 	position: relative;
 	width: 50%;
@@ -287,12 +290,14 @@ a {
 	margin: auto;
 	text-align: center;
 	font-family: 'Prototype';
-	font-size: 17px;
-	text-shadow: 0px 0px 2px rgba(0, 0, 0, 1.0);
+	text-shadow: 1px 0px 2px var(--text-backdrop-shadow);
 }
-.container-description p b {
-	color: rgba(255, 200, 150, 1.0);
+.container-description p b,
+h2.header-static {
+	color: var(--orange-static);
+	font-weight: bold;
 }
+
 @media only screen and (min-width: 500px){
 	.container-description p {
 		font-size: 19px;
@@ -327,7 +332,7 @@ a {
 	padding: 0px;
 }
 .menu-item:hover .title {
-	color: #fdfae7;
+	color: var(--orange-highlight);
 }
 #media-button {
 	bottom: calc( var(--right-hud-height) + 153px);

@@ -31,11 +31,6 @@ label {
 	position: relative;
 	z-index: 11;
 }
-.tourney-header-container h2 {
-	position: relative;
-	display: inline-block;
-	margin: auto;
-}
 .tourney-header-container .gradient-line {
 	position: relative;
 	display: block;
