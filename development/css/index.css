@@ -53,12 +53,26 @@ body {
 	min-width: 500px;
 	z-index: 1;
 }
+
+.aotw-logo {
+	position: relative;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	z-index: 2;
+}
+
 @media only screen and (max-width: 1000px) {
 	#top-video {
 		display: none;
 	}
 	#header-above-video {
 		display: none;
+	}
+	.aotw-logo {
+		width: 50%;
+		min-width: 250px;
 	}
 }
 @media only screen and (min-width: 1001px) {
@@ -68,9 +82,16 @@ body {
 	#header-below-picture {
 		display: none;
 	}
-	#header-above-video h2.header-static {
-		margin-top: 4vw;
+	#header-above-video.header-static {
+		margin-top: 6.5vw;
+		margin-bottom: calc(-26px - 3vw);
 		width: 100%;
+		z-index: 3;
+	}
+	.aotw-logo {
+		width: 65%;
+		min-width: 250px;
+		margin-top: 5.5%;
 	}
 }
 
@@ -94,18 +115,6 @@ a {
 	font-weight: bold;
 	font-family: 'Prototype';
 	letter-spacing: 2px;
-}
-
-/* LOGO */
-.aotw-logo {
-	position: relative;
-	display: block;
-	width: 50%;
-	min-width: 250px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	z-index: 2;
 }
 
 .wide-picture {
