@@ -83,7 +83,7 @@ body {
 		display: none;
 	}
 	#header-above-video.header-static {
-		margin-top: 6.5vw;
+		margin-top: 7.5vw;
 		margin-bottom: calc(-26px - 3vw);
 		width: 100%;
 		z-index: 3;
