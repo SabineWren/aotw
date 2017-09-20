@@ -46,6 +46,55 @@ body {
 	}
 }
 
+.intro-item {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	min-width: 500px;
+	z-index: 1;
+}
+
+.aotw-logo {
+	position: relative;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	z-index: 2;
+}
+
+@media only screen and (max-width: 1000px) {
+	#top-video {
+		display: none;
+	}
+	#header-above-video {
+		display: none;
+	}
+	.aotw-logo {
+		width: 50%;
+		min-width: 250px;
+	}
+}
+@media only screen and (min-width: 1001px) {
+	#top-picture {
+		display: none;
+	}
+	#header-below-picture {
+		display: none;
+	}
+	#header-above-video.header-static {
+		margin-top: 7.5vw;
+		margin-bottom: calc(-26px - 3vw);
+		width: 100%;
+		z-index: 3;
+	}
+	.aotw-logo {
+		width: 65%;
+		min-width: 250px;
+		margin-top: 5.5%;
+	}
+}
+
 @font-face {
 	font-family: 'Prototype';
 	src: url(../assets/Prototype.ttf) format('truetype');
@@ -68,33 +117,9 @@ a {
 	letter-spacing: 2px;
 }
 
-/* LOGO */
-.aotw-logo {
-	position: relative;
-	display: block;
-	width: 100%;
-	min-width: 500px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	z-index: 2;
-}
-@media only screen and (min-width: 950px){
-	.aotw-logo {
-		width: 950px;
-	}
-}
-
 .wide-picture {
 	width: 100%;
 	min-width: 500px;
-}
-
-.logo-background-pic {
-	position: absolute;
-	width: 100%;
-	min-width: 500px;
-	z-index: 1;
 }
 
 /* TROPHIES */
